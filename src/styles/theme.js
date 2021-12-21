@@ -40,6 +40,14 @@ export const theme = createTheme({
                     boxShadow: '5px 7px #000',
                 }
             }
+        },
+        MuiCard: {
+            styleOverrides: {
+                root: {
+                    boxShadow: '5px 7px #000',
+                    border: '5px solid #000'
+                }
+            }
         }
     }
   });
