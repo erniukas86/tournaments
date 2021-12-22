@@ -7,7 +7,7 @@ export default function Header() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             TOURNAMENTS
           </Typography>
-          <Button color="secondary" variant="contained">Login</Button>
+          <Button color="primary" variant="contained">Login</Button>
         </Toolbar>
       </AppBar>
   );

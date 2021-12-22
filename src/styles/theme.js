@@ -24,14 +24,20 @@ export const theme = createTheme({
             styleOverrides: {
                 root: {
                   boxShadow: '5px 7px #000',
-                  textShadow: '2px 2px #000'
+                  textShadow: '2px 2px #000',
+                  '&:hover': {
+                    backgroundColor: 'black',
+                    boxShadow: 'unset'
+                  }
                 },
                 containedPrimary: {
-                    color: 'red'
+                    color: PRIMARY_COLOR,
+                    backgroundColor: SECONDARY_COLOR,
                 },
                 containedSecondary: {
-                    color: PRIMARY_COLOR
-                }
+                    color: SECONDARY_COLOR,
+                    backgroundColor: PRIMARY_COLOR,
+                },
               },
         },
         MuiAppBar: {

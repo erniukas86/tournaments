@@ -1,8 +1,8 @@
 import { imageService } from "../../services/image.js";
-import { Card as MuiCard, CardContent, CardMedia, Typography } from "@mui/material";
+import { Button, Card as MuiCard, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 
 function Card(props) {
-  const { imageName, name, description } = props;
+  const { imageName, name, description, actions } = props;
 
   return (
     <MuiCard sx={{ maxWidth: 345 }}>
@@ -20,6 +20,16 @@ function Card(props) {
             {description}
         </Typography>
     </CardContent>
+    <CardActions>
+        {actions.map(a => <Button
+              key={a.title}
+              size="small" 
+              variant="contained"
+              onClick={a.onClick}
+            >{a.title}
+          </Button>
+        )}
+    </CardActions>
     </MuiCard>
   );
 }

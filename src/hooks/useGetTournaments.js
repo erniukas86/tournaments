@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { tournamentService } from "../services/tournaments";
+import { tournamentService } from "../services/tournament";
 
 function useGetTournaments() {
 
