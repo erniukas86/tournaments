@@ -1,4 +1,4 @@
 export const COLLECTIONS = {
-    TOURNAMENTS: 'tournaments',
-    GROUPS: 'groups'
+  TOURNAMENTS: 'tournaments',
+  GROUPS: 'groups'
 };

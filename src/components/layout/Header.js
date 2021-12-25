@@ -1,14 +1,14 @@
-import { AppBar, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button, Toolbar, Typography } from '@mui/material';
 
-export default function Header() {
+export default function Header () {
   return (
-      <AppBar position="static">
+    <AppBar position="static">
       <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             TOURNAMENTS
-          </Typography>
-          <Button color="primary" variant="contained">Login</Button>
-        </Toolbar>
-      </AppBar>
+        </Typography>
+        <Button color="primary" variant="contained">Login</Button>
+      </Toolbar>
+    </AppBar>
   );
 }

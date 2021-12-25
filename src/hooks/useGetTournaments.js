@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
-import { tournamentService } from "../services/tournament";
+import { useEffect, useState } from 'react';
+import { tournamentService } from '../services/tournament';
 
-function useGetTournaments() {
-
+function useGetTournaments () {
   const [tournaments, setTournamnets] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -17,7 +16,7 @@ function useGetTournaments() {
 
     setTournamnets(result);
     setIsLoading(false);
-  }
+  };
 
   return { tournaments, isLoading };
 }

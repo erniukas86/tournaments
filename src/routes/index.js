@@ -1,5 +1,5 @@
 export const ROUTES = {
-    DEFAULT: '/',
-    GROUPS: ':tournamentId/groups',
-    BRACKET: '/bracket'
+  DEFAULT: '/',
+  GROUPS: ':tournamentId/groups',
+  BRACKET: '/bracket'
 };

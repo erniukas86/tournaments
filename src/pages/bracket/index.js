@@ -1,8 +1,8 @@
-import { Typography } from "@mui/material";
+import { Typography } from '@mui/material';
 
-function Bracket() {
+function Bracket () {
   return (
-      <Typography variant="h1">Bracket</Typography>
+    <Typography variant="h1">Bracket</Typography>
   );
 }
 
