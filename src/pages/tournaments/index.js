@@ -1,12 +1,13 @@
 import { Box, CircularProgress, Grid } from '@mui/material';
 import './styles.css';
 import Card from '../../components/dataDisplay/Card';
-import useGetTournaments from '../../hooks/useGetTournaments';
 import { TOURNAMENT_STATE } from '../../constants/enums';
 import { useNavigate } from 'react-router-dom';
+import useGetData from '../../hooks/useGetData';
+import { tournamentService } from '../../services/tournament';
 
 function Tournaments () {
-  const { tournaments, isLoading } = useGetTournaments();
+  const [tournaments, isLoading] = useGetData(tournamentService.getAll);
   const navigate = useNavigate();
 
   const getActionButtons = (tournament) => {

@@ -1,21 +1,12 @@
 import { Typography } from '@mui/material';
-import { useEffect, useState } from 'react';
 import { groupService } from '../../services/group';
 import { useParams } from 'react-router-dom';
+import useGetData from '../../hooks/useGetData';
 
 function Groups () {
-  const [groups, setGroups] = useState([]);
-
   const { tournamentId } = useParams();
 
-  // TODO: Use custom hook to fetch data
-  useEffect(() => { getData(); }, []);
-
-  const getData = async () => {
-    const result = await groupService.get(tournamentId);
-    setGroups(result);
-  };
-
+  const [groups] = useGetData(groupService.get, [tournamentId]);
   console.log('groups', groups);
 
   return (
