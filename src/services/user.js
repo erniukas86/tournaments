@@ -1,11 +1,10 @@
-import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { firebaseService } from './firebase';
 
-async function getEmail () {
-  const auth = getAuth();
-  const result = await signInWithEmailAndPassword(auth, 'erniukas86@gmail.com', 'Ly2gS3UaYzRFz5x');
-  return result.user.email;
+async function login (userName, password) {
+  const result = await firebaseService.login(userName, password);
+  return result;
 }
 
 export const userService = {
-  getEmail
+  login
 };

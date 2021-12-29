@@ -1,5 +1,6 @@
 
 import { getDocs, collection, getFirestore, query, orderBy, where, doc } from 'firebase/firestore';
+import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
 
 async function getItems (queryItems) {
   const data = await getDocs(query(...queryItems));
@@ -38,7 +39,14 @@ async function getByReference (collectionName, refCollectionName, referenceField
   return data;
 }
 
+async function login (userName, password) {
+  const auth = getAuth();
+  const result = await signInWithEmailAndPassword(auth, userName, password);
+  return result.user;
+}
+
 export const firebaseService = {
   get,
-  getByReference
+  getByReference,
+  login
 };
