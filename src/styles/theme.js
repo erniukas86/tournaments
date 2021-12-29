@@ -54,6 +54,13 @@ export const theme = createTheme({
           border: '5px solid #000'
         }
       }
+    },
+    MuiDialog: {
+      styleOverrides: {
+        paper: {
+          boxShadow: '5px 7px #000'
+        }
+      }
     }
   }
 });
