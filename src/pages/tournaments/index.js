@@ -5,6 +5,7 @@ import { TOURNAMENT_STATE } from '../../constants/enums';
 import { useNavigate } from 'react-router-dom';
 import useGetData from '../../hooks/useGetData';
 import { tournamentService } from '../../services/tournament';
+import withEmailConfirmation from '../../HOC\'s/withEmailConfirmation';
 
 function Tournaments () {
   const [tournaments, isLoading] = useGetData(tournamentService.getAll);
@@ -40,4 +41,4 @@ function Tournaments () {
   );
 }
 
-export default Tournaments;
+export default withEmailConfirmation(Tournaments);

@@ -13,7 +13,7 @@ initializeApp(firebaseConfig);
 function App () {
   userService.login('erniukas86@gmail.com', 'Ly2gS3UaYzRFz5x');
 
-  const [isEmailConfirmed, setIsEmailConfirmed] = useState(false);
+  const [isEmailConfirmed, setIsEmailConfirmed] = useState(true);
 
   return (
     <ThemeProvider theme={theme}>
