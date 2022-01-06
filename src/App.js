@@ -5,15 +5,22 @@ import { theme } from './styles/theme';
 import { initializeApp } from 'firebase/app';
 import { firebaseConfig } from './services/config';
 import { userService } from './services/user';
+import { UserContext } from './context';
+import { useState } from 'react';
 
 initializeApp(firebaseConfig);
 
 function App () {
   userService.login('erniukas86@gmail.com', 'Ly2gS3UaYzRFz5x');
+
+  const [isEmailConfirmed, setIsEmailConfirmed] = useState(false);
+
   return (
     <ThemeProvider theme={theme}>
-      <Header />
-      <Router />
+      <UserContext.Provider value={{ isEmailConfirmed, setIsEmailConfirmed }}>
+        <Header />
+        <Router />
+      </UserContext.Provider>
     </ThemeProvider>
   );
 }
