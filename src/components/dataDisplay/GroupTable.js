@@ -54,12 +54,12 @@ export default function GroupTable ({ group }) {
                   className={styles.place}>{index + 1}</span>
               </TableCell>
               <TableCell >{`${participant.firstName} ${participant.lastName}`}</TableCell>
-              <TableCell >0</TableCell>
-              <TableCell >0</TableCell>
-              <TableCell >0</TableCell>
-              <TableCell >0</TableCell>
-              <TableCell >0</TableCell>
-              <TableCell >0</TableCell>
+              <TableCell >{participant.stats.won}</TableCell>
+              <TableCell >{participant.stats.lost}</TableCell>
+              <TableCell >{participant.stats.score}</TableCell>
+              <TableCell >{participant.stats.against}</TableCell>
+              <TableCell >{participant.stats.difference}</TableCell>
+              <TableCell >{participant.stats.points}</TableCell>
             </TableRow>
           ))}
         </TableBody>
