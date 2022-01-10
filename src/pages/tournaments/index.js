@@ -1,5 +1,4 @@
 import { Box, CircularProgress, Grid } from '@mui/material';
-import styles from './styles.module.css';
 import Card from '../../components/dataDisplay/Card';
 import { TOURNAMENT_STATE } from '../../constants/enums';
 import { useNavigate } from 'react-router-dom';
@@ -31,13 +30,11 @@ function Tournaments () {
   }
 
   return (
-    <div className={styles.container}>
-      <Grid container spacing={6}>
-        {tournaments.map(tournament => <Grid key={tournament.id} item md={4}>
-          <Card {...tournament} actions={getActionButtons(tournament)} />
-        </Grid>)}
-      </Grid>
-    </div>
+    <Grid container spacing={6}>
+      {tournaments.map(tournament => <Grid key={tournament.id} item md={4}>
+        <Card {...tournament} actions={getActionButtons(tournament)} />
+      </Grid>)}
+    </Grid>
   );
 }
 
