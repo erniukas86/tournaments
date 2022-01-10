@@ -1,0 +1,9 @@
+.place {
+    padding: 5px;
+    box-shadow: 4px 5px #000;
+    transition: all 0.3s ease; 
+}
+
+.row:hover .place{
+    box-shadow:unset;
+}

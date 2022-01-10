@@ -1,7 +1,8 @@
 import { createTheme } from '@mui/material/styles';
 
-const PRIMARY_COLOR = '#ff8414';
-const SECONDARY_COLOR = '#3b8864';
+export const PRIMARY_COLOR = '#ff8414';
+export const SECONDARY_COLOR = '#3b8864';
+const PRIMARY_SHADOW = '5px 7px #000';
 
 export const theme = createTheme({
   typography: {
@@ -23,8 +24,9 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          boxShadow: '5px 7px #000',
+          boxShadow: PRIMARY_SHADOW,
           textShadow: '2px 2px #000',
+          marginRight: '10px',
           '&:hover': {
             backgroundColor: 'black',
             boxShadow: 'unset'
@@ -43,14 +45,14 @@ export const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          boxShadow: '5px 7px #000'
+          boxShadow: PRIMARY_SHADOW
         }
       }
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          boxShadow: '5px 7px #000',
+          boxShadow: PRIMARY_SHADOW,
           border: '5px solid #000'
         }
       }
@@ -58,7 +60,15 @@ export const theme = createTheme({
     MuiDialog: {
       styleOverrides: {
         paper: {
-          boxShadow: '5px 7px #000'
+          boxShadow: PRIMARY_SHADOW
+        }
+      }
+    },
+    MuiTableContainer: {
+      styleOverrides: {
+        root: {
+          boxShadow: PRIMARY_SHADOW,
+          marginTop: '50px'
         }
       }
     }
