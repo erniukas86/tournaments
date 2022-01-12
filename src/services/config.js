@@ -9,3 +9,4 @@ export const firebaseConfig = {
 };
 
 export const FIREBASE_FILE_STORAGE_URL = 'https://firebasestorage.googleapis.com/v0/b/tournaments-8ac59.appspot.com/o/';
+export const DEFAULT_LOCALE = 'en';
