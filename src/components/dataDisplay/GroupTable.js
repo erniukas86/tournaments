@@ -42,26 +42,27 @@ export default function GroupTable ({ group }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {participants.map((participant, index) => (
-            <TableRow
-              key={participant.id}
-              hover
-              className={styles.row}
-            >
-              <TableCell component="th" scope="row">
-                <span
-                  style={{ backgroundColor: index + 1 > numberOfGroupQualifiers ? PRIMARY_COLOR : SECONDARY_COLOR }}
-                  className={styles.place}>{index + 1}</span>
-              </TableCell>
-              <TableCell >{`${participant.firstName} ${participant.lastName}`}</TableCell>
-              <TableCell >{participant.stats.won}</TableCell>
-              <TableCell >{participant.stats.lost}</TableCell>
-              <TableCell >{participant.stats.score}</TableCell>
-              <TableCell >{participant.stats.against}</TableCell>
-              <TableCell >{participant.stats.difference}</TableCell>
-              <TableCell >{participant.stats.points}</TableCell>
-            </TableRow>
-          ))}
+          {participants.sort((a, b) => b.stats.order - a.stats.order)
+            .map((participant, index) => (
+              <TableRow
+                key={participant.id}
+                hover
+                className={styles.row}
+              >
+                <TableCell component="th" scope="row">
+                  <span
+                    style={{ backgroundColor: index + 1 > numberOfGroupQualifiers ? PRIMARY_COLOR : SECONDARY_COLOR }}
+                    className={styles.place}>{index + 1}</span>
+                </TableCell>
+                <TableCell >{`${participant.firstName} ${participant.lastName}`}</TableCell>
+                <TableCell >{participant.stats.won}</TableCell>
+                <TableCell >{participant.stats.lost}</TableCell>
+                <TableCell >{participant.stats.score}</TableCell>
+                <TableCell >{participant.stats.against}</TableCell>
+                <TableCell >{participant.stats.difference}</TableCell>
+                <TableCell >{participant.stats.points}</TableCell>
+              </TableRow>
+            ))}
         </TableBody>
       </MuiTable>
     </TableContainer>

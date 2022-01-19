@@ -20,7 +20,6 @@ async function get (tournamentId) {
   }
 
   formGroups(result);
-
   return result;
 }
 
@@ -38,15 +37,47 @@ export function formGroups (groups) {
 
 function createMissingResults (group) {
   const pairedParticipants = arrayService.getUniquePairs(group.participants);
+  group.results = pairedParticipants.map(([home, away]) =>
+    (getResult(home, away, group.results || [])));
+}
 
-  // const results = [...group.results];
+function getResult (home, away, results) {
+  let result = results.find(result =>
+    (result.home.id === home.id &&
+      result.away.id === away.id));
 
-  group.results = pairedParticipants.map(([home, away]) => ({
+  if (result) {
+    return {
+      home: home.id,
+      homeScore: result.homeScore,
+      homeName: `${home.firstName} ${home.lastName}`,
+      away: away.id,
+      awayScore: result.awayScore,
+      awayName: `${away.firstName} ${away.lastName}`
+    };
+  }
+
+  result = results.find(result =>
+    (result.away.id === home.id &&
+      result.home.id === away.id));
+
+  if (result) {
+    return {
+      home: away.id,
+      homeScore: result.awayScore,
+      homeName: `${away.firstName} ${away.lastName}`,
+      away: home.id,
+      awayScore: result.homeScore,
+      awayName: `${home.firstName} ${home.lastName}`
+    };
+  }
+
+  return {
     home: home.id,
     homeName: `${home.firstName} ${home.lastName}`,
     away: away.id,
     awayName: `${away.firstName} ${away.lastName}`
-  }));
+  };
 }
 
 export const groupService = {
