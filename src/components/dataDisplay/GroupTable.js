@@ -23,9 +23,9 @@ export default function GroupTable ({ group }) {
             <TableCell></TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
-            <TableCell></TableCell>
-            <TableCell></TableCell>
-            <TableCell></TableCell>
+            <TableCell className={styles.responsiveCell}></TableCell>
+            <TableCell className={styles.responsiveCell}></TableCell>
+            <TableCell className={styles.responsiveCell}></TableCell>
             <TableCell></TableCell>
           </TableRow>
         </TableHead>
@@ -35,9 +35,9 @@ export default function GroupTable ({ group }) {
             <TableCell>Name</TableCell>
             <TableCell>Won</TableCell>
             <TableCell>Lost</TableCell>
-            <TableCell>For</TableCell>
-            <TableCell>Against</TableCell>
-            <TableCell>Diff</TableCell>
+            <TableCell className={styles.responsiveCell} >For</TableCell>
+            <TableCell className={styles.responsiveCell}>Against</TableCell>
+            <TableCell className={styles.responsiveCell}>Diff</TableCell>
             <TableCell>Points</TableCell>
           </TableRow>
         </TableHead>
@@ -57,9 +57,9 @@ export default function GroupTable ({ group }) {
                 <TableCell >{`${participant.firstName} ${participant.lastName}`}</TableCell>
                 <TableCell >{participant.stats.won}</TableCell>
                 <TableCell >{participant.stats.lost}</TableCell>
-                <TableCell >{participant.stats.score}</TableCell>
-                <TableCell >{participant.stats.against}</TableCell>
-                <TableCell >{participant.stats.difference}</TableCell>
+                <TableCell className={styles.responsiveCell} >{participant.stats.score}</TableCell>
+                <TableCell className={styles.responsiveCell} >{participant.stats.against}</TableCell>
+                <TableCell className={styles.responsiveCell} >{participant.stats.difference}</TableCell>
                 <TableCell >{participant.stats.points}</TableCell>
               </TableRow>
             ))}

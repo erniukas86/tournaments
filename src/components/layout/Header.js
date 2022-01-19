@@ -16,7 +16,6 @@ export default function Header () {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <FormattedMessage id={translationKeys.HEADER_TOURNAMENTS}></FormattedMessage>
         </Typography>
-        {process.env.REACT_APP_API_URL}
         <Dialog
           activatorTitle={intl.formatMessage({ id: translationKeys.HEADER_LOGIN })}
           title="Login"
