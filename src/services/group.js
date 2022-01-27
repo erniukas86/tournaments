@@ -81,6 +81,28 @@ function getResult (home, away, results) {
   };
 }
 
+function getFinishedResults (groups) {
+  const results = [];
+
+  groups.forEach(group => {
+    results.push(...group.results.filter(g => g.homeScore !== undefined));
+  });
+
+  return results;
+}
+
+function getPendingResults (groups) {
+  const results = [];
+
+  groups.forEach(group => {
+    results.push(...group.results.filter(g => g.homeScore === undefined));
+  });
+
+  return results;
+}
+
 export const groupService = {
-  get
+  get,
+  getFinishedResults,
+  getPendingResults
 };

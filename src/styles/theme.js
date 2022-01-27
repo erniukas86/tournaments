@@ -71,6 +71,17 @@ export const theme = createTheme({
           marginTop: '50px'
         }
       }
+    },
+    MuiList: {
+      styleOverrides: {
+        root: {
+          boxShadow: PRIMARY_SHADOW,
+          transition: 'all 0.2s ease',
+          '&:hover': {
+            boxShadow: 'unset'
+          }
+        }
+      }
     }
   }
 });

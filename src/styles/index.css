@@ -8,7 +8,7 @@ body {
   src: url('../assets/fonts/BlackHanSans-Regular.ttf');
 }
 
-.row:hover .place{
+.row:hover .numberBox{
   box-shadow:unset;
 }
 
@@ -26,7 +26,7 @@ body {
   }
 }
 
-.place {
+.numberBox {
   padding: 5px;
   box-shadow: 4px 5px #000;
   transition: all 0.3s ease; 

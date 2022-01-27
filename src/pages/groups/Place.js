@@ -5,7 +5,7 @@ function Place ({ numberOfGroupQualifiers, index }) {
   return (
     <span
       style={{ backgroundColor: index + 1 > numberOfGroupQualifiers ? PRIMARY_COLOR : SECONDARY_COLOR }}
-      className="place">{index + 1}</span>
+      className="numberBox">{index + 1}</span>
   );
 }
 
