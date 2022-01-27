@@ -1,14 +1,14 @@
-import { AppBar, Button, TextField, Toolbar, Typography } from '@mui/material';
-import { useContext } from 'react';
+import { AppBar, /* Button */ TextField, Toolbar, Typography } from '@mui/material';
+// import { useContext } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import { LocaleContext } from '../../context';
+// import { LocaleContext } from '../../context';
 import { translationKeys } from '../../lang/keys';
 import Dialog from '../dialog';
 
 export default function Header () {
   const intl = useIntl();
 
-  const { saveLocale } = useContext(LocaleContext);
+  // const { saveLocale } = useContext(LocaleContext);
 
   return (
     <AppBar position="static">
@@ -24,7 +24,7 @@ export default function Header () {
           <TextField margin="dense" label="User Name" fullWidth></TextField>
           <TextField margin="dense" type="password" label="Password" fullWidth></TextField>
         </Dialog>
-        <Button
+        {/* <Button
           onClick={() => saveLocale('en')}
           variant="contained"
           color="primary"
@@ -37,7 +37,7 @@ export default function Header () {
           color="primary"
         >
           lt
-        </Button>
+        </Button> */}
       </Toolbar>
     </AppBar>
   );
