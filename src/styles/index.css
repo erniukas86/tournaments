@@ -7,3 +7,27 @@ body {
   font-family: BlackHanSansRegular;
   src: url('../assets/fonts/BlackHanSans-Regular.ttf');
 }
+
+.row:hover .place{
+  box-shadow:unset;
+}
+
+@media only screen and (max-width: 800px) {
+  .row td:nth-child(n+5){
+    display: none;
+  }
+
+  .row th:nth-child(n+5){
+    display: none;
+  }
+  
+  .responsiveCell {
+    display: none;
+  }
+}
+
+.place {
+  padding: 5px;
+  box-shadow: 4px 5px #000;
+  transition: all 0.3s ease; 
+}

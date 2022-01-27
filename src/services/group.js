@@ -29,9 +29,10 @@ export function formGroups (groups) {
     createMissingResults(group);
 
     for (let j = 0; j < group.participants.length; j++) {
-      const participant = group.participants[j];
-      participant.stats = statisticService.calculateForPlayer(group.results, participant);
+      group.participants[j] = { ...group.participants[j], ...statisticService.calculateForPlayer(group.results, group.participants[j]) };
     }
+
+    group.participants.sort((a, b) => b.order - a.order);
   }
 }
 
