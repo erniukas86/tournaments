@@ -9,7 +9,8 @@ async function get (tournamentId) {
   const result = await firebaseService.getByReference(
     COLLECTIONS.GROUPS,
     COLLECTIONS.TOURNAMENTS,
-    { name: 'tournament', value: tournamentId }
+    { name: 'tournament', value: tournamentId },
+    { orderBy: ['name', 'asc'] }
   );
 
   const tournament = await tournamentService.getById(result[0].tournament.id);

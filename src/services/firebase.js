@@ -35,7 +35,7 @@ async function getById (collectionName, id) {
   return result.data();
 }
 
-async function getByReference (collectionName, refCollectionName, referenceField) {
+async function getByReference (collectionName, refCollectionName, referenceField, options) {
   const database = getFirestore();
   const reference = doc(collection(database, refCollectionName), referenceField.value);
 
@@ -43,6 +43,10 @@ async function getByReference (collectionName, refCollectionName, referenceField
     collection(database, collectionName),
     where(referenceField.name, '==', reference)
   ];
+
+  if (options?.orderBy) {
+    queryItems.push(orderBy(...options.orderBy));
+  }
 
   const data = await getItems(queryItems);
   return data;
