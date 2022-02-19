@@ -17,5 +17,9 @@ export default function useGetData (get, params = []) {
     setIsLoading(false);
   };
 
-  return [data, isLoading];
+  const reload = async () => {
+    return await getData();
+  };
+
+  return [data, isLoading, reload];
 }

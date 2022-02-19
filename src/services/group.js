@@ -1,3 +1,4 @@
+import { arrayUnion, collection, doc, getFirestore, updateDoc } from 'firebase/firestore';
 import { COLLECTIONS } from '../constants/collections';
 import { arrayService } from './array';
 import { firebaseService } from './firebase';
@@ -96,14 +97,29 @@ function getPendingResults (groups) {
   const results = [];
 
   groups.forEach(group => {
-    results.push(...group.results.filter(g => g.homeScore === undefined));
+    results.push(...group.results.filter(r => r.homeScore === undefined).map(r => (({ ...r, groupId: group.id }))));
   });
 
   return results;
 }
 
+async function saveResult (result) {
+  const database = getFirestore();
+
+  const resultToUpdate = {
+    home: doc(collection(database, COLLECTIONS.PARTICIPANTS), result.home),
+    away: doc(collection(database, COLLECTIONS.PARTICIPANTS), result.away),
+    homeScore: parseInt(result.homeScore),
+    awayScore: parseInt(result.awayScore)
+  };
+
+  const reference = doc(collection(database, COLLECTIONS.GROUPS), result.groupId);
+  await updateDoc(reference, { results: arrayUnion(resultToUpdate) });
+}
+
 export const groupService = {
   get,
   getFinishedResults,
-  getPendingResults
+  getPendingResults,
+  saveResult
 };

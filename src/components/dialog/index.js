@@ -10,8 +10,8 @@ export default function Dialog (props) {
   const {
     title,
     sumbit,
-    children,
-    activatorTitle
+    activatorTitle,
+    children
   } = props;
 
   const [open, setOpen] = useState(false);
@@ -35,8 +35,8 @@ export default function Dialog (props) {
           {children}
         </DialogContent>
         <DialogActions>
-          <Button onClick={close}>Cancel</Button>
-          {sumbit && <Button onClick={sumbit}>Submit</Button>}
+          <Button variant="contained" color="primary" onClick={close}>Cancel</Button>
+          {sumbit && <Button variant="contained" color="primary" onClick={sumbit}>Submit</Button>}
         </DialogActions>
       </MuiDialog>
     </>

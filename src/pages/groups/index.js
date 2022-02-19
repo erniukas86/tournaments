@@ -12,7 +12,7 @@ function Groups () {
   const { tournamentId } = useParams();
   const [tabIndex, setTabIndex] = useState(0);
 
-  const [groups, isLoading] = useGetData(groupService.get, [tournamentId]);
+  const [groups, isLoading, reload] = useGetData(groupService.get, [tournamentId]);
 
   if (isLoading) {
     return <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
@@ -37,6 +37,11 @@ function Groups () {
     setTabIndex(newValue);
   };
 
+  const saveResult = async (result) => {
+    await groupService.saveResult(result);
+    await reload();
+  };
+
   return (
     <>
       <Box>
@@ -52,19 +57,15 @@ function Groups () {
       <div className={styles.matches}>
         {tabIndex === 1 && groupService.getPendingResults(groups).map((result, index) => <VersusCard
           key={index}
-          home={result.homeName}
-          away={result.awayName}
+          currentResult={result}
+          save={saveResult}
         >
-
         </VersusCard>)}
       </div>
       <div className={styles.matches}>
         {tabIndex === 2 && groupService.getFinishedResults(groups).map((result, index) => <VersusCard
           key={index}
-          home={result.homeName}
-          away={result.awayName}
-          homeScore={result.homeScore}
-          awayScore={result.awayScore}
+          currentResult={result}
         >
         </VersusCard>)}
       </div>
