@@ -4,7 +4,6 @@ import { TOURNAMENT_STATE } from '../../constants/enums';
 import { useNavigate } from 'react-router-dom';
 import useGetData from '../../hooks/useGetData';
 import { tournamentService } from '../../services/tournament';
-import withEmailConfirmation from '../../HOC\'s/withEmailConfirmation';
 
 function Tournaments () {
   const [tournaments, isLoading] = useGetData(tournamentService.getAll);
@@ -18,6 +17,12 @@ function Tournaments () {
     if (state === TOURNAMENT_STATE.GROUPS) {
       // TODO: Make path resolver
       actions.push({ title: 'Groups', onClick: () => navigate(`${id}/groups`) });
+    }
+
+    // TODO REMOVE THIS HARDCODED STUFF WITH PROPER LOGIC
+    if (tournament.name === 'PC Table Tennis 2022') {
+      actions.push({ title: '🏆 Cup', onClick: () => navigate('/bracket') });
+      actions.push({ title: '🤝 Cup', onClick: () => navigate('/challengerbracket') });
     }
 
     return actions;
@@ -38,4 +43,4 @@ function Tournaments () {
   );
 }
 
-export default withEmailConfirmation(Tournaments);
+export default Tournaments;

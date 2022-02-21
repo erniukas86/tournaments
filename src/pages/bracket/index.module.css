@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 50px;
+  }
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    flex-basis: 100%;
+    flex: 1;
+}
