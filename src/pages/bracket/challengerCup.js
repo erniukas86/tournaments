@@ -28,7 +28,7 @@ function ChallengerCup () {
           <VersusCard currentResult={{ homeName: 'Robertas Kalninis (B9)', awayName: 'Audrius Lukosevicius (A6)' }}></VersusCard>
         </div>
         <div className={styles.column} style={{ gap: '200px' }}>
-          <VersusCard currentResult={{ homeName: 'Arnoldas Drapanauskis (B6)', awayName: 'Winner of #1 game' }}></VersusCard>
+          <VersusCard currentResult={{ homeName: 'Arnoldas Drapanauskis (B6)', isHomeDQ: true, awayName: 'Winner of #1 game' }}></VersusCard>
           <VersusCard currentResult={{ homeName: 'Winner of #2 game', awayName: 'Winner of #3 game' }}></VersusCard>
         </div>
         <div className={styles.column}>
@@ -37,7 +37,7 @@ function ChallengerCup () {
       </div>}
       {tabIndex === 1 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard currentResult={{ homeName: 'Looser of #4 game', awayName: 'Looser of #5 game' }}></VersusCard>
+          <VersusCard currentResult={{ homeName: 'Arnoldas Drapanauskis (B6)', isHomeDQ: true, awayName: 'Looser of #5 game' }}></VersusCard>
         </div>
       </div>}
     </>

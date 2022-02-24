@@ -54,9 +54,11 @@ function getResult (home, away, results) {
       home: home.id,
       homeScore: result.homeScore,
       homeName: `${home.firstName} ${home.lastName}`,
+      isHomeDQ: result.isHomeDQ,
       away: away.id,
       awayScore: result.awayScore,
-      awayName: `${away.firstName} ${away.lastName}`
+      awayName: `${away.firstName} ${away.lastName}`,
+      isAwayDQ: result.isAwayDQ
     };
   }
 
@@ -69,9 +71,11 @@ function getResult (home, away, results) {
       home: away.id,
       homeScore: result.awayScore,
       homeName: `${away.firstName} ${away.lastName}`,
+      isHomeDQ: result.isAwayDQ,
       away: home.id,
       awayScore: result.homeScore,
-      awayName: `${home.firstName} ${home.lastName}`
+      awayName: `${home.firstName} ${home.lastName}`,
+      isAwayDQ: result.isHomeDQ
     };
   }
 
