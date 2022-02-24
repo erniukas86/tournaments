@@ -34,12 +34,12 @@ function Bracket () {
         </div>
         <div className={styles.column}>
           <VersusCard currentResult={{ homeName: 'Martynas Juzaitis (A1)', awayName: 'Winner of #1 game' }}></VersusCard>
-          <VersusCard currentResult={{ homeName: 'Klaidas Pilkis (B2)', awayName: 'Simas Bakus (A3)' }}></VersusCard>
+          <VersusCard currentResult={{ homeName: 'Klaidas Pilkis (B2)', homeScore: 3, awayName: 'Simas Bakus (A3)', awayScore: 0 }}></VersusCard>
           <VersusCard currentResult={{ homeName: 'Rokas Jankauskas (A2)', awayName: 'Laimonas Mikelionis (B3)' }}></VersusCard>
           <VersusCard currentResult={{ homeName: 'Winner of #2 game', awayName: 'Ernestas Burokas (B1)' }}></VersusCard>
         </div>
         <div className={styles.column} style={{ gap: '200px' }}>
-          <VersusCard currentResult={{ homeName: 'Winner of #3 game', awayName: 'Winner of #4 game' }}></VersusCard>
+          <VersusCard currentResult={{ homeName: 'Winner of #3 game', awayName: 'Klaidas Pilkis (B2)' }}></VersusCard>
           <VersusCard currentResult={{ homeName: 'Winner of #5 game', awayName: 'Winner of #6 game' }}></VersusCard>
         </div>
         <div className={styles.column}>
@@ -53,7 +53,7 @@ function Bracket () {
       </div>}
       {tabIndex === 2 && <div className={styles.row}>
         <div className={styles.column} style={{ gap: '200px' }}>
-          <VersusCard currentResult={{ homeName: 'Looser of #3 game', awayName: 'Looser of #4 game' }}></VersusCard>
+          <VersusCard currentResult={{ homeName: 'Looser of #3 game', awayName: 'Simas Bakus (A3)' }}></VersusCard>
           <VersusCard currentResult={{ homeName: 'Looser of #5 game', awayName: 'Looser of #6 game' }}></VersusCard>
         </div>
         <div className={styles.column}>
