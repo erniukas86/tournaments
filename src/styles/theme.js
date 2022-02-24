@@ -57,6 +57,16 @@ export const theme = createTheme({
         }
       }
     },
+    MuiCardActions: {
+      styleOverrides: {
+        root: {
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '10px'
+        }
+      }
+    },
     MuiDialog: {
       styleOverrides: {
         paper: {

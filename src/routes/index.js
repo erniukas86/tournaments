@@ -2,5 +2,6 @@ export const ROUTES = {
   DEFAULT: '/',
   GROUPS: ':tournamentId/groups',
   BRACKET: '/bracket',
-  CHALLENGER_BRACKET: '/challengerbracket'
+  CHALLENGER_BRACKET: '/challengerbracket',
+  STANDINGS: '/standings'
 };

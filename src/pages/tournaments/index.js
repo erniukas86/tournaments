@@ -23,6 +23,7 @@ function Tournaments () {
     if (tournament.name === 'PC Table Tennis 2022') {
       actions.push({ title: '🏆 Cup', onClick: () => navigate('/bracket') });
       actions.push({ title: '🤝 Cup', onClick: () => navigate('/challengerbracket') });
+      actions.push({ title: 'Standings', onClick: () => navigate('/standings') });
     }
 
     return actions;
@@ -35,7 +36,7 @@ function Tournaments () {
   }
 
   return (
-    <Grid container spacing={6}>
+    <Grid container wrap='wrap' spacing={6}>
       {tournaments.map(tournament => <Grid key={tournament.id} item md={4}>
         <Card {...tournament} actions={getActionButtons(tournament)} />
       </Grid>)}
