@@ -7,7 +7,7 @@ import SaveIcon from '@mui/icons-material/Save';
 import { UserContext } from '../../context';
 
 function VersusCard (props) {
-  const { currentResult, save } = props;
+  const { currentResult, save, numberOfGame } = props;
   const [result, setResult] = useState({});
   const { user } = useContext(UserContext);
   const { homeScore, awayScore, homeName, awayName, isAwayDQ, isHomeDQ } = currentResult;
@@ -35,6 +35,7 @@ function VersusCard (props) {
   return (
     <List className={styles.card} style={{ backgroundColor: isAnyoneDQ && '#bbbbbb' }}>
       <div className={styles.cardItem}>
+        {numberOfGame && <Typography className={styles.numberOfGame}>#{numberOfGame}</Typography>}
         <Typography>{`${homeName} ${isHomeDQ ? '❗' : ''}`}</Typography>
         {homeScore !== undefined && <Typography className="numberBox" style={{ backgroundColor: getColor(homeScore) }}>{homeScore}</Typography>}
         {isResultEntered && <IconButton onClick={saveResult}><SaveIcon></SaveIcon></IconButton>}
@@ -52,11 +53,13 @@ function VersusCard (props) {
 
 VersusCard.propTypes = {
   currentResult: PropTypes.shape.isRequired,
-  save: PropTypes.func
+  save: PropTypes.func,
+  numberOfGame: PropTypes.number
 };
 
 VersusCard.defaultProps = {
-  save: () => {}
+  save: () => {},
+  numberOfGame: null
 };
 
 export default VersusCard;
