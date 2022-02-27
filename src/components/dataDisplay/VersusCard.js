@@ -33,7 +33,7 @@ function VersusCard (props) {
   const isAnyoneDQ = isHomeDQ || isAwayDQ;
 
   return (
-    <List className={styles.card} style={{ backgroundColor: isAnyoneDQ && '#bbbbbb' }}>
+    <List className={`${styles.card} game${numberOfGame}`} style={{ backgroundColor: isAnyoneDQ && '#bbbbbb' }}>
       <div className={styles.cardItem}>
         {numberOfGame && <Typography className={styles.numberOfGame}>#{numberOfGame}</Typography>}
         <Typography>{`${homeName} ${isHomeDQ ? '❗' : ''}`}</Typography>

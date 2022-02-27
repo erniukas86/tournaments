@@ -3,6 +3,7 @@ import { useState } from 'react';
 import VersusCard from '../../components/dataDisplay/VersusCard';
 import { bracketService } from '../../services/bracket';
 import styles from './index.module.css';
+import SteppedLineTo from './SteppedLineTo';
 
 function Bracket () {
   console.log(bracketService.getBracket(10));
@@ -27,39 +28,53 @@ function Bracket () {
           </Tabs>
         </Box>
       </Box>
-      {tabIndex === 0 && <div className={styles.row}>
-        <div className={styles.column}>
-          <VersusCard numberOfGame={1} currentResult={{ homeName: 'Edvinas Velicka (A5)', homeScore: 3, awayName: 'Andrejus Ivascenko (B4)', awayScore: 2 }}></VersusCard>
-          <VersusCard numberOfGame={2} currentResult={{ homeName: 'Paulius Vaitkevicius (B5)', awayName: 'Rokas Sidaravicius (A4)' }}></VersusCard>
+      {tabIndex === 0 && <>
+        <div className={styles.row}>
+          <div className={styles.column}>
+            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Edvinas Velicka (A5)', homeScore: 3, awayName: 'Andrejus Ivascenko (B4)', awayScore: 2 }}></VersusCard>
+            <VersusCard numberOfGame={2} currentResult={{ homeName: 'Paulius Vaitkevicius (B5)', awayName: 'Rokas Sidaravicius (A4)' }}></VersusCard>
+          </div>
+          <div className={styles.column}>
+            <VersusCard numberOfGame={3} currentResult={{ homeName: 'Martynas Juzaitis (A1)', awayName: 'Edvinas Velicka (A5)' }}></VersusCard>
+            <VersusCard numberOfGame={4} currentResult={{ homeName: 'Klaidas Pilkis (B2)', homeScore: 3, awayName: 'Simas Bakus (A3)', awayScore: 0 }}></VersusCard>
+            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Rokas Jankauskas (A2)', awayName: 'Laimonas Mikelionis (B3)' }}></VersusCard>
+            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Winner of #2 game', awayName: 'Ernestas Burokas (B1)' }}></VersusCard>
+          </div>
+          <div className={styles.column} style={{ gap: '200px' }}>
+            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Winner of #3 game', awayName: 'Klaidas Pilkis (B2)' }}></VersusCard>
+            <VersusCard numberOfGame={8} currentResult={{ homeName: 'Winner of #5 game', awayName: 'Winner of #6 game' }}></VersusCard>
+          </div>
+          <div className={styles.column}>
+            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Winner of #7 game', awayName: 'Winner of #8 game' }}></VersusCard>
+          </div>
         </div>
-        <div className={styles.column}>
-          <VersusCard numberOfGame={3} currentResult={{ homeName: 'Martynas Juzaitis (A1)', awayName: 'Edvinas Velicka (A5)' }}></VersusCard>
-          <VersusCard numberOfGame={4} currentResult={{ homeName: 'Klaidas Pilkis (B2)', homeScore: 3, awayName: 'Simas Bakus (A3)', awayScore: 0 }}></VersusCard>
-          <VersusCard numberOfGame={5} currentResult={{ homeName: 'Rokas Jankauskas (A2)', awayName: 'Laimonas Mikelionis (B3)' }}></VersusCard>
-          <VersusCard numberOfGame={6} currentResult={{ homeName: 'Winner of #2 game', awayName: 'Ernestas Burokas (B1)' }}></VersusCard>
-        </div>
-        <div className={styles.column} style={{ gap: '200px' }}>
-          <VersusCard numberOfGame={7} currentResult={{ homeName: 'Winner of #3 game', awayName: 'Klaidas Pilkis (B2)' }}></VersusCard>
-          <VersusCard numberOfGame={8} currentResult={{ homeName: 'Winner of #5 game', awayName: 'Winner of #6 game' }}></VersusCard>
-        </div>
-        <div className={styles.column}>
-          <VersusCard numberOfGame={9} currentResult={{ homeName: 'Winner of #7 game', awayName: 'Winner of #8 game' }}></VersusCard>
-        </div>
-      </div>}
+        <SteppedLineTo from="game1" to="game3" />
+        <SteppedLineTo from="game2" to="game6" />
+        <SteppedLineTo from="game3" to="game7" />
+        <SteppedLineTo from="game4" to="game7" />
+        <SteppedLineTo from="game5" to="game8" />
+        <SteppedLineTo from="game6" to="game8" />
+        <SteppedLineTo from="game7" to="game9" />
+        <SteppedLineTo from="game8" to="game9" />
+      </>}
       {tabIndex === 1 && <div className={styles.row}>
         <div className={styles.column}>
           <VersusCard numberOfGame={10} currentResult={{ homeName: 'Looser of #7 game', awayName: 'Looser of #8 game' }}></VersusCard>
         </div>
       </div>}
-      {tabIndex === 2 && <div className={styles.row}>
-        <div className={styles.column} style={{ gap: '200px' }}>
-          <VersusCard numberOfGame={11} currentResult={{ homeName: 'Looser of #3 game', awayName: 'Simas Bakus (A3)' }}></VersusCard>
-          <VersusCard numberOfGame={12} currentResult={{ homeName: 'Looser of #5 game', awayName: 'Looser of #6 game' }}></VersusCard>
+      {tabIndex === 2 && <>
+        <div className={styles.row}>
+          <div className={styles.column} style={{ gap: '200px' }}>
+            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Looser of #3 game', awayName: 'Simas Bakus (A3)' }}></VersusCard>
+            <VersusCard numberOfGame={12} currentResult={{ homeName: 'Looser of #5 game', awayName: 'Looser of #6 game' }}></VersusCard>
+          </div>
+          <div className={styles.column}>
+            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Winner of #11 game', awayName: 'Winner of #12 game' }}></VersusCard>
+          </div>
         </div>
-        <div className={styles.column}>
-          <VersusCard numberOfGame={13} currentResult={{ homeName: 'Winner of #11 game', awayName: 'Winner of #12 game' }}></VersusCard>
-        </div>
-      </div>}
+        <SteppedLineTo from="game11" to="game13" />
+        <SteppedLineTo from="game12" to="game13" />
+      </>}
       {tabIndex === 3 && <div className={styles.row}>
         <div className={styles.column}>
           <VersusCard numberOfGame={14} currentResult={{ homeName: 'Looser of #11 game', awayName: 'Looser of #12 game' }}></VersusCard>
