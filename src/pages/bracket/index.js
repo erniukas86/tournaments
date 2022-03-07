@@ -32,13 +32,13 @@ function Bracket () {
         <div className={styles.row}>
           <div className={styles.column}>
             <VersusCard numberOfGame={1} currentResult={{ homeName: 'Edvinas Velicka (A5)', homeScore: 3, awayName: 'Andrejus Ivascenko (B4)', awayScore: 2 }}></VersusCard>
-            <VersusCard numberOfGame={2} currentResult={{ homeName: 'Paulius Vaitkevicius (B5)', awayName: 'Rokas Sidaravicius (A4)' }}></VersusCard>
+            <VersusCard numberOfGame={2} currentResult={{ homeName: 'Paulius Vaitkevicius (B5)', homeScore: 3, awayName: 'Rokas Sidaravicius (A4)', awayScore: 2 }}></VersusCard>
           </div>
           <div className={styles.column}>
             <VersusCard numberOfGame={3} currentResult={{ homeName: 'Martynas Juzaitis (A1)', homeScore: 3, awayName: 'Edvinas Velicka (A5)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={4} currentResult={{ homeName: 'Klaidas Pilkis (B2)', homeScore: 3, awayName: 'Simas Bakus (A3)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={5} currentResult={{ homeName: 'Rokas Jankauskas (A2)', awayName: 'Laimonas Mikelionis (B3)' }}></VersusCard>
-            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Winner of #2 game', awayName: 'Ernestas Burokas (B1)' }}></VersusCard>
+            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Paulius Vaitkevicius (B5)', awayName: 'Ernestas Burokas (B1)' }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={7} currentResult={{ homeName: 'Martynas Juzaitis (A1)', awayName: 'Klaidas Pilkis (B2)' }}></VersusCard>
@@ -82,7 +82,7 @@ function Bracket () {
       </div>}
       {tabIndex === 4 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={15} currentResult={{ homeName: 'Andrejus Ivascenko (B4)', awayName: 'Looser of #2 game' }}></VersusCard>
+          <VersusCard numberOfGame={15} currentResult={{ homeName: 'Andrejus Ivascenko (B4)', awayName: 'Rokas Sidaravicius (A4)' }}></VersusCard>
         </div>
       </div>}
     </>
