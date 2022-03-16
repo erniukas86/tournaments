@@ -25,16 +25,16 @@ function ChallengerCup () {
       {tabIndex === 0 && <>
         <div className={styles.row}>
           <div className={styles.column}>
-            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Tadas Kucinskas (A7)', awayName: 'Deividas Knoraitis (B8)' }}></VersusCard>
+            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Tadas Kucinskas (A7)', homeScore: 3, awayName: 'Deividas Knoraitis (B8)', awayScore: 1 }}></VersusCard>
             <VersusCard numberOfGame={2} currentResult={{ homeName: 'Henrikas Miliunas (B7)', homeScore: 0, awayName: 'Karolis Vaitele (A8)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={3} currentResult={{ homeName: 'Robertas Kalninis (B9)', awayName: 'Audrius Lukosevicius (A6)' }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={4} currentResult={{ homeName: 'Arnoldas Drapanauskis (B6)', isHomeDQ: true, awayName: 'Winner of #1 game' }}></VersusCard>
+            <VersusCard numberOfGame={4} currentResult={{ homeName: 'Arnoldas Drapanauskis (B6)', isHomeDQ: true, awayName: 'Tadas Kucinskas (A7)' }}></VersusCard>
             <VersusCard numberOfGame={5} currentResult={{ homeName: 'Karolis Vaitele (A8)', awayName: 'Winner of #3 game' }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Winner of #4 game', awayName: 'Winner of #5 game' }}></VersusCard>
+            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas Kucinskas (A7)', awayName: 'Winner of #5 game' }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game4" />
