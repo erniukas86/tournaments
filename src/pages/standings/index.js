@@ -47,13 +47,13 @@ function Standings () {
       },
       {
         Place: '9',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Andrejus Ivascenko',
+        Result: '6W/4L'
       },
       {
         Place: '10',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Rokas Sidaravicius',
+        Result: '4W/5L'
       },
       {
         Place: '11',
