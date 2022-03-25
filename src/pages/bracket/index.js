@@ -65,11 +65,11 @@ function Bracket () {
       {tabIndex === 2 && <>
         <div className={styles.row}>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Edvinas Velicka (A5)', awayName: 'Simas Bakus (A3)' }}></VersusCard>
+            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Edvinas Velicka (A5)', homeScore: 1, awayName: 'Simas Bakus (A3)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={12} currentResult={{ homeName: 'Rokas Jankauskas (A2)', awayName: 'Paulius Vaitkevicius (B5)' }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Winner of #11 game', awayName: 'Winner of #12 game' }}></VersusCard>
+            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Simas Bakus (A3)', awayName: 'Winner of #12 game' }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game11" to="game13" />
@@ -77,7 +77,7 @@ function Bracket () {
       </>}
       {tabIndex === 3 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={14} currentResult={{ homeName: 'Looser of #11 game', awayName: 'Looser of #12 game' }}></VersusCard>
+          <VersusCard numberOfGame={14} currentResult={{ homeName: 'Edvinas Velicka (A5)', awayName: 'Looser of #12 game' }}></VersusCard>
         </div>
       </div>}
       {tabIndex === 4 && <div className={styles.row}>
