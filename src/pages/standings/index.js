@@ -67,8 +67,8 @@ function Standings () {
       },
       {
         Place: '13',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Karolis Vaitele',
+        Result: '2W/8L'
       },
       {
         Place: '14',
@@ -77,18 +77,18 @@ function Standings () {
       },
       {
         Place: '15',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Henrikas Miliunas',
+        Result: '2W/7L'
       },
       {
         Place: '16',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Deividas Knoraitis',
+        Result: '1W/8L'
       },
       {
         Place: '17',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Robertas Kalninis',
+        Result: '0W/9L'
       }
     ];
   };
