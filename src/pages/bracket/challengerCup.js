@@ -34,7 +34,7 @@ function ChallengerCup () {
             <VersusCard numberOfGame={5} currentResult={{ homeName: 'Karolis Vaitele (A8)', homeScore: 1, awayName: 'Audrius Lukosevicius (A6)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas Kucinskas (A7)', awayName: 'Audrius Lukosevicius (A6)' }}></VersusCard>
+            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas Kucinskas (A7)', homeScore: 3, awayName: 'Audrius Lukosevicius (A6)', awayScore: 2 }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game4" />
