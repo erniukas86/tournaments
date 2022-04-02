@@ -69,7 +69,7 @@ function Bracket () {
             <VersusCard numberOfGame={12} currentResult={{ homeName: 'Rokas Jankauskas (A2)', homeScore: 3, awayName: 'Paulius Vaitkevicius (B5)', awayScore: 2 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Simas Bakus (A3)', awayName: 'Rokas Jankauskas (A2)' }}></VersusCard>
+            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Simas Bakus (A3)', homeScore: 2, awayName: 'Rokas Jankauskas (A2)', awayScore: 3 }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game11" to="game13" />
