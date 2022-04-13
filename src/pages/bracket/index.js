@@ -59,7 +59,7 @@ function Bracket () {
       </>}
       {tabIndex === 1 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={10} currentResult={{ homeName: 'Martynas Juzaitis (A1)', awayName: 'Laimonas Mikelionis (B3)' }}></VersusCard>
+          <VersusCard numberOfGame={10} currentResult={{ homeName: 'Martynas Juzaitis (A1)', homeScore: 2, awayName: 'Laimonas Mikelionis (B3)', awayScore: 3 }}></VersusCard>
         </div>
       </div>}
       {tabIndex === 2 && <>
