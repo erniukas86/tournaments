@@ -7,13 +7,13 @@ function Standings () {
     return [
       {
         Place: '🥇',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Ernestas Burokas',
+        Result: '11W/0L'
       },
       {
         Place: '🥈',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Klaidas Pilkis',
+        Result: '9W/2L'
       },
       {
         Place: '🥉',
