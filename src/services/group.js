@@ -87,24 +87,35 @@ function getResult (home, away, results) {
   };
 }
 
-function getFinishedResults (groups) {
+function getFinishedResults (groups, search) {
   const results = [];
 
   groups.forEach(group => {
-    results.push(...group.results.filter(g => g.homeScore !== undefined));
+    results.push(...group.results.filter(g => g.homeScore !== undefined && contains(g, search)));
   });
 
   return results;
 }
 
-function getPendingResults (groups) {
+function getPendingResults (groups, search) {
   const results = [];
 
   groups.forEach(group => {
-    results.push(...group.results.filter(r => r.homeScore === undefined).map(r => (({ ...r, groupId: group.id }))));
+    results.push(...group.results
+      .filter(r => r.homeScore === undefined && contains(r, search))
+      .map(r => (({ ...r, groupId: group.id }))));
   });
 
   return results;
+}
+
+function contains (item, text) {
+  if (!text) return true;
+
+  if (item.awayName.toLowerCase().includes(text.toLowerCase()) || item.homeName.toLowerCase().includes(text.toLowerCase())) {
+    return true;
+  }
+  return false;
 }
 
 async function saveResult (result) {
