@@ -4,6 +4,7 @@ import { TOURNAMENT_STATE } from '../../constants/enums';
 import { useNavigate } from 'react-router-dom';
 import useGetData from '../../hooks/useGetData';
 import { tournamentService } from '../../services/tournament';
+import { ROUTES } from '../../routes';
 
 function Tournaments () {
   const [tournaments, isLoading] = useGetData(tournamentService.getAll);
@@ -21,9 +22,14 @@ function Tournaments () {
 
     // TODO REMOVE THIS HARDCODED STUFF WITH PROPER LOGIC
     if (tournament.name === 'PC Table Tennis 2022') {
-      actions.push({ title: '🏆 Cup', onClick: () => navigate('/bracket') });
-      actions.push({ title: '🤝 Cup', onClick: () => navigate('/challengerbracket') });
-      actions.push({ title: 'Standings', onClick: () => navigate('/standings') });
+      actions.push({ title: '🏆 Cup', onClick: () => navigate(ROUTES.BRACKET) });
+      actions.push({ title: '🤝 Cup', onClick: () => navigate(ROUTES.CHALLENGER_BRACKET) });
+      actions.push({ title: 'Standings', onClick: () => navigate(ROUTES.STANDINGS) });
+    }
+
+    if (tournament.name === 'PC Table Tennis 2023') {
+      actions.push({ title: '🏆 Cup', onClick: () => navigate(ROUTES.BRACKET_2023) });
+      actions.push({ title: '🤝 Cup', onClick: () => navigate(ROUTES.CHALLENGER_BRACKET_2023) });
     }
 
     return actions;
