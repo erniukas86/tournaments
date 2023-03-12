@@ -28,15 +28,15 @@ function Bracket2023 () {
       {tabIndex === 0 && <>
         <div className={styles.row}>
           <div className={styles.column}>
-            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Mantas Reika (A11)', homeScore: '-', awayName: '(B10)', awayScore: '-' }}></VersusCard>
-            <VersusCard numberOfGame={2} currentResult={{ homeName: '(A9)', homeScore: '-', awayName: 'Deimante Simonaityte (B12)', awayScore: '-' }}></VersusCard>
-            <VersusCard numberOfGame={4} currentResult={{ homeName: '(A10)', homeScore: '-', awayName: '(B11)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Mantas Reika (A11)', homeScore: '-', awayName: 'Justinas Lazauninkas (B10)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={2} currentResult={{ homeName: 'Liudvikas Griskus (A9)', homeScore: '-', awayName: 'Deimante Simonaityte (B12)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={4} currentResult={{ homeName: 'Tadas Seniunas (A10)', homeScore: '-', awayName: 'Egidijus Rubys (B11)', awayScore: '-' }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={5} currentResult={{ homeName: '(A7)', homeScore: '-', awayName: 'Winner of #1', awayScore: '-' }}></VersusCard>
-            <VersusCard numberOfGame={6} currentResult={{ homeName: '(B8)', homeScore: '-', awayName: 'Winner of #2', awayScore: '-' }}></VersusCard>
-            <VersusCard numberOfGame={7} currentResult={{ homeName: '(A8)', homeScore: '-', awayName: '(B9)', awayScore: '-' }}></VersusCard>
-            <VersusCard numberOfGame={8} currentResult={{ homeName: 'Winner of #4', homeScore: '-', awayName: '(B7)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Nedas Simoliunas (A7)', homeScore: '-', awayName: 'Winner of #1', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Airidas Setkus (B8)', homeScore: '-', awayName: 'Winner of #2', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Deividas Knoraitis (A8)', homeScore: '-', awayName: 'Levas Lavrentjevas (B9)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={8} currentResult={{ homeName: 'Winner of #4', homeScore: '-', awayName: 'Nedas Simoliunas (B7)', awayScore: '-' }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={9} currentResult={{ homeName: 'Winner of #5', homeScore: '-', awayName: 'Winner of #6', awayScore: '-' }}></VersusCard>
