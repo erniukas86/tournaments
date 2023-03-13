@@ -33,7 +33,7 @@ function Bracket2023 () {
             <VersusCard numberOfGame={4} currentResult={{ homeName: 'Tadas Seniunas (A10)', homeScore: '-', awayName: 'Egidijus Rubys (B11)', awayScore: '-' }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Nedas Simoliunas (A7)', homeScore: '-', awayName: 'Winner of #1', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Tadas Kucinskas (A7)', homeScore: '-', awayName: 'Winner of #1', awayScore: '-' }}></VersusCard>
             <VersusCard numberOfGame={6} currentResult={{ homeName: 'Airidas Setkus (B8)', homeScore: '-', awayName: 'Winner of #2', awayScore: '-' }}></VersusCard>
             <VersusCard numberOfGame={7} currentResult={{ homeName: 'Deividas Knoraitis (A8)', homeScore: '-', awayName: 'Levas Lavrentjevas (B9)', awayScore: '-' }}></VersusCard>
             <VersusCard numberOfGame={8} currentResult={{ homeName: 'Winner of #4', homeScore: '-', awayName: 'Nedas Simoliunas (B7)', awayScore: '-' }}></VersusCard>
