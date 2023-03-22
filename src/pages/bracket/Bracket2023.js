@@ -29,19 +29,19 @@ function Bracket2023 () {
       {tabIndex === 0 && <>
         <div className={styles.row}>
           <div className={styles.column}>
-            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Rokas Sidaravicius (A5)', homeScore: '-', awayName: 'Justinas Mikalauskas (B4)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Rokas Sidaravicius (A5)', homeScore: 3, awayName: 'Justinas Mikalauskas (B4)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={2} currentResult={{ homeName: 'Martynas Juzaitis (A3)', homeScore: 3, awayName: 'Raimonda Preimonaite (B6)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={3} currentResult={{ homeName: 'Karolis Vaitele (A6)', homeScore: 0, awayName: 'Rokas Jankauskas (B3)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={4} currentResult={{ homeName: 'Andrejus Ivascenko (A4)', homeScore: 3, awayName: 'Robertas Kalninis (B5)', awayScore: 0 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Ernestas Burokas (A1)', homeScore: '-', awayName: 'Winner of #1', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Ernestas Burokas (A1)', homeScore: 3, awayName: 'Rokas Sidaravicius (A5)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={6} currentResult={{ homeName: 'Klaidas Pilkis (B2)', homeScore: 3, awayName: 'Martynas Juzaitis (A3)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={7} currentResult={{ homeName: 'Dmytro Ivanchenko (A2)', homeScore: 2, awayName: 'Rokas Jankauskas (B3)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={8} currentResult={{ homeName: 'Andrejus Ivascenko (A4)', homeScore: 1, awayName: 'Laimonas Mikelionis (B1)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Winner of #5', homeScore: '-', awayName: 'Klaidas Pilkis (B2)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Ernestas Burokas (A1)', homeScore: '-', awayName: 'Klaidas Pilkis (B2)', awayScore: '-' }}></VersusCard>
             <VersusCard numberOfGame={10} currentResult={{ homeName: 'Rokas Jankauskas (B3)', homeScore: '-', awayName: 'Laimonas Mikelionis (B1)', awayScore: '-' }}></VersusCard>
           </div>
           <div className={styles.column}>
@@ -67,7 +67,7 @@ function Bracket2023 () {
       {tabIndex === 2 && <>
         <div className={styles.row}>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Looser of #5', homeScore: '-', awayName: 'Martynas Juzaitis (A3)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Rokas Sidaravicius (A5)', homeScore: '-', awayName: 'Martynas Juzaitis (A3)', awayScore: '-' }}></VersusCard>
             <VersusCard numberOfGame={14} currentResult={{ homeName: 'Dmytro Ivanchenko (A2)', homeScore: '-', awayName: 'Andrejus Ivascenko (A4)', awayScore: '-' }}></VersusCard>
           </div>
           <div className={styles.column}>
@@ -86,7 +86,7 @@ function Bracket2023 () {
         <>
           <div className={styles.row}>
             <div className={styles.column} style={{ gap: '200px' }}>
-              <VersusCard numberOfGame={17} currentResult={{ homeName: 'Looser of #1', homeScore: '-', awayName: 'Raimonda Preimonaite (B6)', awayScore: '-' }}></VersusCard>
+              <VersusCard numberOfGame={17} currentResult={{ homeName: 'Justinas Mikalauskas (B4)', homeScore: '-', awayName: 'Raimonda Preimonaite (B6)', awayScore: '-' }}></VersusCard>
               <VersusCard numberOfGame={18} currentResult={{ homeName: 'Karolis Vaitele (A6)', homeScore: 3, awayName: 'Robertas Kalninis (B5)', awayScore: 0 }}></VersusCard>
             </div>
             <div className={styles.column}>
