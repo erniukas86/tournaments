@@ -30,6 +30,7 @@ function Tournaments () {
     if (tournament.name === 'PC Table Tennis 2023') {
       actions.push({ title: '🏆 Cup', onClick: () => navigate(ROUTES.BRACKET_2023) });
       actions.push({ title: '🤝 Cup', onClick: () => navigate(ROUTES.CHALLENGER_BRACKET_2023) });
+      actions.push({ title: 'Standings', onClick: () => navigate(ROUTES.STANDINGS_2023) });
     }
 
     return actions;
