@@ -40,10 +40,10 @@ function Bracket2023 () {
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={8} currentResult={{ homeName: 'Winner of #4', homeScore: '-', awayName: 'Liudvikas Griskus (A9)', awayScore: '-' }}></VersusCard>
-            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Deividas Knoraitis (A8)', homeScore: '-', awayName: 'Nedas Simoliunas (B7)', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Deividas Knoraitis (A8)', homeScore: 3, awayName: 'Nedas Simoliunas (B7)', awayScore: 0 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={10} currentResult={{ homeName: 'Winner of #8', homeScore: '-', awayName: 'Winner of #9', awayScore: '-' }}></VersusCard>
+            <VersusCard numberOfGame={10} currentResult={{ homeName: 'Winner of #8', homeScore: '-', awayName: 'Deividas Knoraitis (A8)', awayScore: '-' }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game4" />
@@ -58,7 +58,7 @@ function Bracket2023 () {
       </>}
       {tabIndex === 1 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={11} currentResult={{ homeName: 'Looser of #8', homeScore: '-', awayName: 'Looser of #9', awayScore: '-' }}></VersusCard>
+          <VersusCard numberOfGame={11} currentResult={{ homeName: 'Looser of #8', homeScore: '-', awayName: 'Nedas Simoliunas (B7)', awayScore: '-' }}></VersusCard>
         </div>
       </div>}
       {tabIndex === 2 && <>
