@@ -93,7 +93,7 @@ function Standings2023 () {
       {
         Place: '18',
         'Full Name': 'TBA',
-        Result: '0W/9L'
+        Result: 'TBA'
       },
       {
         Place: '19',
