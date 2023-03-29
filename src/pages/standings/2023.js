@@ -107,13 +107,13 @@ function Standings2023 () {
       },
       {
         Place: '21',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Justinas Lazauninkas',
+        Result: '4W/10L'
       },
       {
         Place: '22',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Egidijus Rubys',
+        Result: '1W/12L'
       },
       {
         Place: '23',
