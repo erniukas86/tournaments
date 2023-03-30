@@ -17,13 +17,13 @@ function Standings2023 () {
       },
       {
         Place: '🥉',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Klaidas Pilkis',
+        Result: '12W/2L'
       },
       {
         Place: '4',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Rokas Jankauskas',
+        Result: '11W/4L'
       },
       {
         Place: '5',
