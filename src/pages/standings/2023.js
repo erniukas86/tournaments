@@ -67,23 +67,23 @@ function Standings2023 () {
       },
       {
         Place: '13',
+        'Full Name': 'TBA',
+        Result: 'TBA'
+      },
+      {
+        Place: '14',
+        'Full Name': 'TBA',
+        Result: 'TBA'
+      },
+      {
+        Place: '15',
         'Full Name': 'Liudvikas Griskus',
         Result: '5W/9L'
       },
       {
-        Place: '14',
+        Place: '16',
         'Full Name': 'Nedas Simoliunas',
         Result: '6W/8L'
-      },
-      {
-        Place: '15',
-        'Full Name': 'TBA',
-        Result: 'TBA'
-      },
-      {
-        Place: '16',
-        'Full Name': 'TBA',
-        Result: 'TBA'
       },
       {
         Place: '17',
