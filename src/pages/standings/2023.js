@@ -57,13 +57,13 @@ function Standings2023 () {
       },
       {
         Place: '11',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Raimonda Preimonaite',
+        Result: '7W/7L'
       },
       {
         Place: '12',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Robertas Kalninis',
+        Result: '6W/8L'
       },
       {
         Place: '13',
