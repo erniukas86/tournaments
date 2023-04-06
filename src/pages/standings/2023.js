@@ -67,13 +67,13 @@ function Standings2023 () {
       },
       {
         Place: '13',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Deividas Knoraitis',
+        Result: '6W/7L'
       },
       {
         Place: '14',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Tadas Kucinskas',
+        Result: '6W/7L'
       },
       {
         Place: '15',
