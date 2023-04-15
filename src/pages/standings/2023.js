@@ -7,13 +7,13 @@ function Standings2023 () {
     return [
       {
         Place: '🥇',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Ernestas Burokas',
+        Result: '13W/0L'
       },
       {
         Place: '🥈',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Laimonas Mikelionis',
+        Result: '13W/1L'
       },
       {
         Place: '🥉',
@@ -87,23 +87,23 @@ function Standings2023 () {
       },
       {
         Place: '17',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Airidas Setkus',
+        Result: '7W/7L'
       },
       {
         Place: '18',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Levas Lavrentjevas',
+        Result: '4W/10L'
       },
       {
         Place: '19',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Mantas Reika',
+        Result: '2W/12L'
       },
       {
         Place: '20',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Tadas Seniunas',
+        Result: '2W/12L'
       },
       {
         Place: '21',
