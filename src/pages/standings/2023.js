@@ -27,13 +27,13 @@ function Standings2023 () {
       },
       {
         Place: '5',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Martynas Juzaitis',
+        Result: '11W/3L'
       },
       {
         Place: '6',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Dmytro Ivanchenko',
+        Result: '10W/3L'
       },
       {
         Place: '7',
