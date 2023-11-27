@@ -6,5 +6,7 @@ export const ROUTES = {
   STANDINGS: '/standings',
   STANDINGS_2023: '/standings2023',
   BRACKET_2023: '/bracket2023',
-  CHALLENGER_BRACKET_2023: '/challengerbracket2023'
+  CHALLENGER_BRACKET_2023: '/challengerbracket2023',
+  DUETS_BRACKET_2023: '/duetsbracket2023',
+  DUETS_STANDINGS_2023: '/duetsstandings2023'
 };

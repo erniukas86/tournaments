@@ -33,6 +33,11 @@ function Tournaments () {
       actions.push({ title: 'Standings', onClick: () => navigate(ROUTES.STANDINGS_2023) });
     }
 
+    if (tournament.name === 'PC Table Tennis Duets 2023') {
+      actions.push({ title: '🏆 Cup', onClick: () => navigate(ROUTES.DUETS_BRACKET_2023) });
+      actions.push({ title: 'Standings', onClick: () => navigate(ROUTES.DUETS_STANDINGS_2023) });
+    }
+
     return actions;
   };
 

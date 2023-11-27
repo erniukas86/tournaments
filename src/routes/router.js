@@ -8,6 +8,8 @@ import Groups from '../pages/groups';
 import Standings from '../pages/standings';
 import Standings2023 from '../pages/standings/2023';
 import Tournaments from '../pages/tournaments';
+import DuetsBracket2023 from '../pages/bracket/DuetsBracket2023';
+import DuetsStandings2023 from '../pages/standings/duets2023';
 
 function Router () {
   return (
@@ -21,6 +23,8 @@ function Router () {
         <Route path={ROUTES.CHALLENGER_BRACKET_2023} element={<ChallengerCup2023 />} />
         <Route path={ROUTES.STANDINGS} element={<Standings />} />
         <Route path={ROUTES.STANDINGS_2023} element={<Standings2023 />} />
+        <Route path={ROUTES.DUETS_BRACKET_2023} element={<DuetsBracket2023 />} />
+        <Route path={ROUTES.DUETS_STANDINGS_2023} element={<DuetsStandings2023 />} />
       </Routes>
     </BrowserRouter>
   );
