@@ -37,13 +37,13 @@ function Standings2023 () {
       },
       {
         Place: '7',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Andrejus Ivascenko',
+        Result: '8W/6L'
       },
       {
         Place: '8',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Rokas Sidaravicius',
+        Result: '7W/7L'
       },
       {
         Place: '9',

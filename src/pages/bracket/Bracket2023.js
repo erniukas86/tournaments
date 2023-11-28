@@ -79,7 +79,7 @@ function Bracket2023 () {
       </>}
       {tabIndex === 3 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={16} currentResult={{ homeName: 'Rokas Sidaravicius (A5)', homeScore: '-', awayName: 'Andrejus Ivascenko (A4)', awayScore: '-' }}></VersusCard>
+          <VersusCard numberOfGame={16} currentResult={{ homeName: 'Rokas Sidaravicius (A5)', homeScore: 0, awayName: 'Andrejus Ivascenko (A4)', awayScore: 3 }}></VersusCard>
         </div>
       </div>}
       {tabIndex === 4 && <div className={styles.row}>
