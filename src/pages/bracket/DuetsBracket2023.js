@@ -26,9 +26,9 @@ function DuetsBracket2023 () {
         <div className={styles.row}>
           <div className={styles.column}>
             <VersusCard numberOfGame={1} currentResult={{ homeName: 'Mantas R. & Ernestas B. (A1)', awayName: 'Justas B. & Andrejus I. (B4)' }}></VersusCard>
-            <VersusCard numberOfGame={2} currentResult={{ homeName: 'Levas L. & Klaidas P. (B2)', awayName: '(A3)' }}></VersusCard>
-            <VersusCard numberOfGame={3} currentResult={{ homeName: '(A2)', awayName: 'Deimante S. & Martynas J. (B3)' }}></VersusCard>
-            <VersusCard numberOfGame={4} currentResult={{ homeName: '(A4)', awayName: 'Nedas S. & Rokas J. (B1)' }}></VersusCard>
+            <VersusCard numberOfGame={2} currentResult={{ homeName: 'Levas L. & Klaidas P. (B2)', awayName: 'Justinas L. & Karolis V. (A3)' }}></VersusCard>
+            <VersusCard numberOfGame={3} currentResult={{ homeName: 'Tadas T. & Dmytro I. (A2)', awayName: 'Deimante S. & Martynas J. (B3)' }}></VersusCard>
+            <VersusCard numberOfGame={4} currentResult={{ homeName: 'Justas P. & Raimonda P. (A4)', awayName: 'Nedas S. & Rokas J. (B1)' }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={5} currentResult={{ homeName: 'Winner of #1 game', awayName: 'Winner of #2 game' }}></VersusCard>
