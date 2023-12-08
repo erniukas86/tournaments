@@ -25,13 +25,13 @@ function DuetsBracket2023 () {
       {tabIndex === 0 && <>
         <div className={styles.row}>
           <div className={styles.column}>
-            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Mantas R. & Ernestas B. (A1)', awayName: 'Justas B. & Andrejus I. (B4)' }}></VersusCard>
+            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Mantas R. & Ernestas B. (A1)', homeScore: 3, awayName: 'Justas B. & Andrejus I. (B4)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={2} currentResult={{ homeName: 'Levas L. & Klaidas P. (B2)', homeScore: 3, awayName: 'Justinas L. & Karolis V. (A3)', awayScore: 2 }}></VersusCard>
             <VersusCard numberOfGame={3} currentResult={{ homeName: 'Tadas T. & Dmytro I. (A2)', homeScore: 3, awayName: 'Deimante S. & Martynas J. (B3)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={4} currentResult={{ homeName: 'Justas P. & Raimonda P. (A4)', awayName: 'Nedas S. & Rokas J. (B1)' }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Winner of #1 game', awayName: 'Levas L. & Klaidas P. (B2)' }}></VersusCard>
+            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Mantas R. & Ernestas B. (A1)', awayName: 'Levas L. & Klaidas P. (B2)' }}></VersusCard>
             <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas T. & Dmytro I. (A2)', awayName: 'Winner of #4 game' }}></VersusCard>
           </div>
           <div className={styles.column}>
