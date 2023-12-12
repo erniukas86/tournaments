@@ -27,23 +27,23 @@ function DuetsStandings2023 () {
       },
       {
         Place: '5',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Justinas L. & Karolis V.',
+        Result: '1W/3L'
       },
       {
         Place: '6',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Deimante S. & Martynas J.',
+        Result: '2W/3L'
       },
       {
         Place: '7',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Justas B. & Andrejus I.',
+        Result: '1W/4L'
       },
       {
         Place: '8',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Justas P. & Raimonda P.',
+        Result: '0W/4L'
       },
       {
         Place: '9',

@@ -32,7 +32,7 @@ function DuetsBracket2023 () {
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={5} currentResult={{ homeName: 'Mantas R. & Ernestas B. (A1)', awayName: 'Levas L. & Klaidas P. (B2)' }}></VersusCard>
-            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas T. & Dmytro I. (A2)', awayName: 'Winner of #4 game' }}></VersusCard>
+            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas T. & Dmytro I. (A2)', awayName: 'Nedas S. & Rokas J. (B1)' }}></VersusCard>
           </div>
           <div className={styles.column}>
             <VersusCard numberOfGame={7} currentResult={{ homeName: 'Winner of #5 game', awayName: 'Winner of #6 game' }}></VersusCard>
