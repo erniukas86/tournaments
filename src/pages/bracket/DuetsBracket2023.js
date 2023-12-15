@@ -32,10 +32,10 @@ function DuetsBracket2023 () {
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={5} currentResult={{ homeName: 'Mantas R. & Ernestas B. (A1)', awayName: 'Levas L. & Klaidas P. (B2)' }}></VersusCard>
-            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas T. & Dmytro I. (A2)', awayName: 'Nedas S. & Rokas J. (B1)' }}></VersusCard>
+            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas T. & Dmytro I. (A2)', homeScore: 1, awayName: 'Nedas S. & Rokas J. (B1)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Winner of #5 game', awayName: 'Winner of #6 game' }}></VersusCard>
+            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Winner of #5 game', awayName: 'Nedas S. & Rokas J. (B1)' }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game5" />
@@ -47,7 +47,7 @@ function DuetsBracket2023 () {
       </>}
       {tabIndex === 1 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={8} currentResult={{ homeName: 'Loser of #5 game', awayName: 'Loser of #6 game' }}></VersusCard>
+          <VersusCard numberOfGame={8} currentResult={{ homeName: 'Loser of #5 game', awayName: 'Tadas T. & Dmytro I. (A2)' }}></VersusCard>
         </div>
       </div>}
     </>
