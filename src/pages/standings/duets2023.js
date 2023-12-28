@@ -7,23 +7,23 @@ function DuetsStandings2023 () {
     return [
       {
         Place: '🥇',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Nedas S. & Rokas J.',
+        Result: '6w/1L'
       },
       {
         Place: '🥈',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Mantas R. & Ernestas B.',
+        Result: '5W/1L'
       },
       {
         Place: '🥉',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Tadas T. & Dmytro I.',
+        Result: '4W/2L'
       },
       {
         Place: '4',
-        'Full Name': 'TBA',
-        Result: 'TBA'
+        'Full Name': 'Levas L. & Klaidas P.',
+        Result: '4W/3L'
       },
       {
         Place: '5',

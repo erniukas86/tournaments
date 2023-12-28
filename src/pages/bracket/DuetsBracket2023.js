@@ -35,7 +35,7 @@ function DuetsBracket2023 () {
             <VersusCard numberOfGame={6} currentResult={{ homeName: 'Tadas T. & Dmytro I. (A2)', homeScore: 1, awayName: 'Nedas S. & Rokas J. (B1)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Mantas R. & Ernestas B. (A1)', awayName: 'Nedas S. & Rokas J. (B1)' }}></VersusCard>
+            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Mantas R. & Ernestas B. (A1)', homeScore: 1, awayName: 'Nedas S. & Rokas J. (B1)', awayScore: 3 }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game5" />
@@ -47,7 +47,7 @@ function DuetsBracket2023 () {
       </>}
       {tabIndex === 1 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={8} currentResult={{ homeName: 'Levas L. & Klaidas P. (B2)', awayName: 'Tadas T. & Dmytro I. (A2)' }}></VersusCard>
+          <VersusCard numberOfGame={8} currentResult={{ homeName: 'Levas L. & Klaidas P. (B2)', homeScore: 2, awayName: 'Tadas T. & Dmytro I. (A2)', awayScore: 3 }}></VersusCard>
         </div>
       </div>}
     </>
