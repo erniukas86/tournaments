@@ -38,6 +38,11 @@ function Tournaments () {
       actions.push({ title: 'Standings', onClick: () => navigate(ROUTES.DUETS_STANDINGS_2023) });
     }
 
+    if (tournament.name === 'PC Table Tennis 2024') {
+      actions.push({ title: '🏆 Cup', onClick: () => navigate(ROUTES.BRACKET_2024) });
+      actions.push({ title: '🤝 Cup', onClick: () => navigate(ROUTES.CHALLENGER_BRACKET_2024) });
+    }
+
     return actions;
   };
 
