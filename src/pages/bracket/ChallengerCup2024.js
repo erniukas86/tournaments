@@ -29,12 +29,12 @@ function ChallengerCup2024 () {
           <div className={styles.column}>
             <VersusCard numberOfGame={2} currentResult={{ homeName: 'Nedas Simoliunas (A4)', homeScore: undefined, awayName: 'Justas Pranauskis (B5)', awayScore: undefined }}></VersusCard>
             <VersusCard numberOfGame={3} currentResult={{ homeName: 'Tadas Turskis (C4)', homeScore: undefined, awayName: 'Mantas Reika (D5)', awayScore: undefined }}></VersusCard>
-            <VersusCard numberOfGame={4} currentResult={{ homeName: 'Mindaugas Naravas (B4)', homeScore: undefined, awayName: 'Tomas Rentelis (A5)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={4} currentResult={{ homeName: 'Mindaugas Naravas (B4)', homeScore: 3, awayName: 'Tomas Rentelis (A5)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={5} currentResult={{ homeName: 'Justinas Lazauninkas (D4)', homeScore: undefined, awayName: 'Winner of #1', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={6} currentResult={{ homeName: 'Winner of #2', homeScore: undefined, awayName: 'Winner of #3', awayScore: undefined }}></VersusCard>
-            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Winner of #4', homeScore: undefined, awayName: 'Winner of #5', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Mindaugas Naravas (B4)', homeScore: undefined, awayName: 'Winner of #5', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column}>
             <VersusCard numberOfGame={8} currentResult={{ homeName: 'Winner of #6', homeScore: undefined, awayName: 'Winner of #7', awayScore: undefined }}></VersusCard>
