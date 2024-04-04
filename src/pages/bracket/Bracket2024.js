@@ -39,7 +39,7 @@ function Bracket2024 () {
             <VersusCard numberOfGame={8} currentResult={{ homeName: 'Rokas Jankauskas (D1)', homeScore: undefined, awayName: 'Winner of #4', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Winner of #5', homeScore: undefined, awayName: 'Winner of #6', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Winner of #5', homeScore: undefined, awayName: 'Klaidas Pilkis (C1)', awayScore: undefined }}></VersusCard>
             <VersusCard numberOfGame={10} currentResult={{ homeName: 'Winner of #7', homeScore: undefined, awayName: 'Winner of #8', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column}>
