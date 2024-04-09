@@ -12,24 +12,27 @@ import DuetsBracket2023 from '../pages/bracket/DuetsBracket2023';
 import DuetsStandings2023 from '../pages/standings/duets2023';
 import Bracket2024 from '../pages/bracket/Bracket2024';
 import ChallengerCup2024 from '../pages/bracket/ChallengerCup2024';
+import Layout from '../components/layout';
 
 function Router () {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path={ROUTES.DEFAULT} element={<Tournaments />} />
-        <Route path={ROUTES.GROUPS} element={<Groups />} />
-        <Route path={ROUTES.BRACKET} element={<Bracket />} />
-        <Route path={ROUTES.BRACKET_2023} element={<Bracket2023 />} />
-        <Route path={ROUTES.CHALLENGER_BRACKET} element={<ChallengerCup />} />
-        <Route path={ROUTES.CHALLENGER_BRACKET_2023} element={<ChallengerCup2023 />} />
-        <Route path={ROUTES.STANDINGS} element={<Standings />} />
-        <Route path={ROUTES.STANDINGS_2023} element={<Standings2023 />} />
-        <Route path={ROUTES.DUETS_BRACKET_2023} element={<DuetsBracket2023 />} />
-        <Route path={ROUTES.DUETS_STANDINGS_2023} element={<DuetsStandings2023 />} />
-        <Route path={ROUTES.BRACKET_2024} element={<Bracket2024 />} />
-        <Route path={ROUTES.CHALLENGER_BRACKET_2024} element={<ChallengerCup2024 />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path={ROUTES.DEFAULT} element={<Tournaments />} />
+          <Route path={ROUTES.GROUPS} element={<Groups />} />
+          <Route path={ROUTES.BRACKET} element={<Bracket />} />
+          <Route path={ROUTES.BRACKET_2023} element={<Bracket2023 />} />
+          <Route path={ROUTES.CHALLENGER_BRACKET} element={<ChallengerCup />} />
+          <Route path={ROUTES.CHALLENGER_BRACKET_2023} element={<ChallengerCup2023 />} />
+          <Route path={ROUTES.STANDINGS} element={<Standings />} />
+          <Route path={ROUTES.STANDINGS_2023} element={<Standings2023 />} />
+          <Route path={ROUTES.DUETS_BRACKET_2023} element={<DuetsBracket2023 />} />
+          <Route path={ROUTES.DUETS_STANDINGS_2023} element={<DuetsStandings2023 />} />
+          <Route path={ROUTES.BRACKET_2024} element={<Bracket2024 />} />
+          <Route path={ROUTES.CHALLENGER_BRACKET_2024} element={<ChallengerCup2024 />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }

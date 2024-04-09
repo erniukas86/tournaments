@@ -1,16 +1,28 @@
 import { AppBar, Button, TextField, Toolbar, Typography } from '@mui/material';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import { UserContext } from '../../context';
+import { TitleContext, UserContext } from '../../context';
 // import { LocaleContext } from '../../context';
 import { translationKeys } from '../../lang/keys';
 import { userService } from '../../services/user';
 import Dialog from '../dialog';
+import { Home } from '@mui/icons-material';
+import IconButton from '@mui/material/IconButton';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { ROUTES } from '../../routes';
+
+const routeTitles = {
+  [ROUTES.BRACKET_2024]: 'PC Table Tennis 2024 CHAMPIONS CUP',
+  [ROUTES.CHALLENGER_BRACKET_2024]: 'PC Table Tennis 2024 CHALLENGERS CUP'
+};
 
 export default function Header () {
   const intl = useIntl();
   const [loginData, setLoginData] = useState({});
   const { user, setUser } = useContext(UserContext);
+  const { title, setTitle } = useContext(TitleContext);
+
+  const navigate = useNavigate();
 
   const logout = async () => {
     await userService.logout();
@@ -25,6 +37,14 @@ export default function Header () {
     }
   };
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const routeTitleKey = Object.keys(routeTitles).find(key => pathname.includes(key));
+
+    setTitle(routeTitles[routeTitleKey] || '');
+  }, [pathname]);
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setLoginData({ ...loginData, [name]: value });
@@ -34,8 +54,14 @@ export default function Header () {
   return (
     <AppBar position="static">
       <Toolbar>
+        <IconButton onClick={() => navigate('/')}>
+          <Home/>
+        </IconButton>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <FormattedMessage id={translationKeys.HEADER_TOURNAMENTS}></FormattedMessage>
+        </Typography>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          {title}
         </Typography>
         {!user && <Dialog
           activatorTitle={intl.formatMessage({ id: translationKeys.HEADER_LOGIN })}
