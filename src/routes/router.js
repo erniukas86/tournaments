@@ -6,14 +6,14 @@ import ChallengerCup from '../pages/bracket/challengerCup';
 import ChallengerCup2023 from '../pages/bracket/ChallengerCup2023';
 import Groups from '../pages/groups';
 import Standings from '../pages/standings';
-import Standings2023 from '../pages/standings/2024';
+import Standings2023 from '../pages/standings/2023';
 import Tournaments from '../pages/tournaments';
 import DuetsBracket2023 from '../pages/bracket/DuetsBracket2023';
 import DuetsStandings2023 from '../pages/standings/duets2023';
 import Bracket2024 from '../pages/bracket/Bracket2024';
 import ChallengerCup2024 from '../pages/bracket/ChallengerCup2024';
 import Layout from '../components/layout';
-import Standings2024 from '../pages/standings/2023';
+import Standings2024 from '../pages/standings/2024';
 
 function Router () {
   return (
