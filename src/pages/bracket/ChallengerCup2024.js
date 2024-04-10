@@ -24,20 +24,20 @@ function ChallengerCup2024 () {
       {tabIndex === 0 && <>
         <div className={styles.row}>
           <div className={styles.column}>
-            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Justas Baniulis (C5)', homeScore: undefined, awayName: 'Deimante Simonaityte (D6)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={1} currentResult={{ homeName: 'Justas Baniulis (C5)', homeScore: 0, awayName: 'Deimante Simonaityte (D6)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column}>
             <VersusCard numberOfGame={2} currentResult={{ homeName: 'Nedas Simoliunas (A4)', homeScore: 3, awayName: 'Justas Pranauskis (B5)', awayScore: 1 }}></VersusCard>
             <VersusCard numberOfGame={3} currentResult={{ homeName: 'Tadas Turskis (C4)', homeScore: 1, awayName: 'Mantas Reika (D5)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={4} currentResult={{ homeName: 'Mindaugas Naravas (B4)', homeScore: 3, awayName: 'Tomas Rentelis (A5)', awayScore: 0 }}></VersusCard>
-            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Justinas Lazauninkas (D4)', homeScore: undefined, awayName: 'Winner of #1', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Justinas Lazauninkas (D4)', homeScore: undefined, awayName: 'Deimante Simonaityte (D6)', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Nedas Simoliunas (A4)', homeScore: undefined, awayName: 'Mantas Reika (D5)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={6} currentResult={{ homeName: 'Nedas Simoliunas (A4)', homeScore: 3, awayName: 'Mantas Reika (D5)', awayScore: 1 }}></VersusCard>
             <VersusCard numberOfGame={7} currentResult={{ homeName: 'Mindaugas Naravas (B4)', homeScore: undefined, awayName: 'Winner of #5', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={8} currentResult={{ homeName: 'Winner of #6', homeScore: undefined, awayName: 'Winner of #7', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={8} currentResult={{ homeName: 'Nedas Simoliunas (A4)', homeScore: undefined, awayName: 'Winner of #7', awayScore: undefined }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game5" />

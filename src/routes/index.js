@@ -10,5 +10,6 @@ export const ROUTES = {
   DUETS_BRACKET_2023: '/duetsbracket2023',
   DUETS_STANDINGS_2023: '/duetsstandings2023',
   BRACKET_2024: '/bracket2024',
-  CHALLENGER_BRACKET_2024: '/challengerbracket2024'
+  CHALLENGER_BRACKET_2024: '/challengerbracket2024',
+  STANDINGS_2024: '/standings2024'
 };
