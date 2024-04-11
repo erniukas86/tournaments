@@ -87,23 +87,23 @@ function Standings2024 () {
       },
       {
         Place: '17',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Tadas Turskis',
+        Result: '1W/4L'
       },
       {
         Place: '18',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Tomas Rentelis',
+        Result: '0W/5L'
       },
       {
         Place: '19',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Justas Pranauskis',
+        Result: '0W/5L'
       },
       {
         Place: '20',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Deimante Simonaityte',
+        Result: '1W/6L'
       },
       {
         Place: '21',
