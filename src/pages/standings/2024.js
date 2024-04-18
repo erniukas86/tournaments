@@ -47,43 +47,43 @@ function Standings2024 () {
       },
       {
         Place: '9',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Raimonda Preimonaite',
+        Result: '2W/3L'
       },
       {
         Place: '10',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Edvinas Velicka',
+        Result: '2W/3L'
       },
       {
         Place: '11',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Robertas Kalninis',
+        Result: '2W/3L'
       },
       {
         Place: '12',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Algirdas Kirvelaitis',
+        Result: '2W/4L'
       },
       {
         Place: '13',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Mindaugas Naravas',
+        Result: '4W/3L'
       },
       {
         Place: '14',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Nedas Simoliunas',
+        Result: '3W/4L'
       },
       {
         Place: '15',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Mantas Reika',
+        Result: '3W/4L'
       },
       {
         Place: '16',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Justinas Lazauninkas',
+        Result: '3W/4L'
       },
       {
         Place: '17',
