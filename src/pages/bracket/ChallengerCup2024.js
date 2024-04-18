@@ -34,10 +34,10 @@ function ChallengerCup2024 () {
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={6} currentResult={{ homeName: 'Nedas Simoliunas (A4)', homeScore: 3, awayName: 'Mantas Reika (D5)', awayScore: 1 }}></VersusCard>
-            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Mindaugas Naravas (B4)', homeScore: undefined, awayName: 'Justinas Lazauninkas (D4)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={7} currentResult={{ homeName: 'Mindaugas Naravas (B4)', homeScore: 3, awayName: 'Justinas Lazauninkas (D4)', awayScore: 0 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={8} currentResult={{ homeName: 'Nedas Simoliunas (A4)', homeScore: undefined, awayName: 'Winner of #7', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={8} currentResult={{ homeName: 'Nedas Simoliunas (A4)', homeScore: undefined, awayName: 'Mindaugas Naravas (B4)', awayScore: 3 }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game5" />
