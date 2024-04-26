@@ -39,11 +39,11 @@ function Bracket2024 () {
             <VersusCard numberOfGame={8} currentResult={{ homeName: 'Rokas Jankauskas (D1)', homeScore: 1, awayName: 'Martynas Juzaitis (C2)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Ernestas Burokas (A1)', homeScore: undefined, awayName: 'Klaidas Pilkis (C1)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Ernestas Burokas (A1)', homeScore: 3, awayName: 'Klaidas Pilkis (C1)', awayScore: 1 }}></VersusCard>
             <VersusCard numberOfGame={10} currentResult={{ homeName: 'Dmytro Ivanchenko (B1)', homeScore: undefined, awayName: 'Martynas Juzaitis (C2)', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Winner of #9', homeScore: undefined, awayName: 'Winner of #10', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Ernestas Burokas (A1)', homeScore: undefined, awayName: 'Winner of #10', awayScore: undefined }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game5" />
@@ -59,7 +59,7 @@ function Bracket2024 () {
       </>}
       {tabIndex === 1 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={12} currentResult={{ homeName: 'Loser of #9', homeScore: undefined, awayName: 'Loser of #10', awayScore: undefined }}></VersusCard>
+          <VersusCard numberOfGame={12} currentResult={{ homeName: 'Klaidas Pilkis (C1)', homeScore: undefined, awayName: 'Loser of #10', awayScore: undefined }}></VersusCard>
         </div>
       </div>}
       {tabIndex === 2 && <>
