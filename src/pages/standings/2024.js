@@ -27,13 +27,13 @@ function Standings2024 () {
       },
       {
         Place: '5',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Karolis Vaitele',
+        Result: '6W/2L'
       },
       {
         Place: '6',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Rokas Jankauskas',
+        Result: '6W/2L'
       },
       {
         Place: '7',
