@@ -7,13 +7,13 @@ function Standings2024 () {
     return [
       {
         Place: '🥇',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Dmytro Ivanchenko (B1)',
+        Result: '7W/0L'
       },
       {
         Place: '🥈',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Ernestas Burokas (A1)',
+        Result: '6W/1L'
       },
       {
         Place: '🥉',
