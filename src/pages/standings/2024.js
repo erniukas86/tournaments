@@ -37,13 +37,13 @@ function Standings2024 () {
       },
       {
         Place: '7',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Laimonas Mikelionis',
+        Result: '5W/3L'
       },
       {
         Place: '8',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Andrejus Ivascenko',
+        Result: '4W/4L'
       },
       {
         Place: '9',

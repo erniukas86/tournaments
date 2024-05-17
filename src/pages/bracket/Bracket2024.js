@@ -77,7 +77,7 @@ function Bracket2024 () {
       </>}
       {tabIndex === 3 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={16} currentResult={{ homeName: 'Laimonas Mikelionis (B2)', homeScore: undefined, awayName: 'Andrejus Ivascenko (A2)', awayScore: undefined }}></VersusCard>
+          <VersusCard numberOfGame={16} currentResult={{ homeName: 'Laimonas Mikelionis (B2)', homeScore: 3, awayName: 'Andrejus Ivascenko (A2)', awayScore: 1 }}></VersusCard>
         </div>
       </div>}
     </>
