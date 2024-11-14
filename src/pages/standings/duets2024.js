@@ -29,8 +29,8 @@ function DuetsStandings2024() {
       },
       {
         Place: "5",
-        "Full Name": "N/A",
-        Result: "N/A",
+        "Full Name": "Justas P & Dmytro I",
+        Result: "4W/1L",
       },
       {
         Place: "6",
