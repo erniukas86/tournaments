@@ -52,9 +52,9 @@ function DuetsBracket2024() {
                 numberOfGame={3}
                 currentResult={{
                   homeName: "Lukas K & Ernestas B (A2)",
-                  homeScore: undefined,
+                  homeScore: 0,
                   awayName: "Mantas R & Klaidas P (B3)",
-                  awayScore: undefined,
+                  awayScore: 3,
                 }}
               ></VersusCard>
               <VersusCard
@@ -80,7 +80,7 @@ function DuetsBracket2024() {
               <VersusCard
                 numberOfGame={6}
                 currentResult={{
-                  homeName: "Winner of #3",
+                  homeName: "Mantas R & Klaidas P (B3)",
                   homeScore: undefined,
                   awayName: "Winner of #4",
                   awayScore: undefined,
