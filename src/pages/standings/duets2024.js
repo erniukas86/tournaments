@@ -34,18 +34,18 @@ function DuetsStandings2024() {
       },
       {
         Place: "6",
-        "Full Name": "N/A",
-        Result: "N/A",
+        "Full Name": "Lukas K & Ernestas B (A2)",
+        Result: "3W/2L",
       },
       {
         Place: "7",
-        "Full Name": "N/A",
-        Result: "N/A",
+        "Full Name": "Carmen F & Martynas J (B2)",
+        Result: "3W/2L",
       },
       {
         Place: "8",
-        "Full Name": "N/A",
-        Result: "N/A",
+        "Full Name": "Deimante S & Rokas J (A4)",
+        Result: "1W/4L",
       },
       {
         Place: "9",
