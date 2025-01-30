@@ -9,23 +9,23 @@ function DuetsStandings2024() {
     return [
       {
         Place: "🥇",
-        "Full Name": "N/A",
-        Result: "N/A",
+        "Full Name": "Tomas R & Rokas S",
+        Result: "7W/0L",
       },
       {
         Place: "🥈",
-        "Full Name": "N/A",
-        Result: "5W/1L",
+        "Full Name": "Tomas P & Raimonda P",
+        Result: "3W/4L",
       },
       {
         Place: "🥉",
-        "Full Name": "N/A",
-        Result: "N/A",
+        "Full Name": "Mantas R & Klaidas P",
+        Result: "4W/3L",
       },
       {
         Place: "4",
-        "Full Name": "N/A",
-        Result: "N/A",
+        "Full Name": "Nedas S & Edvinas V",
+        Result: "3W/4L",
       },
       {
         Place: "5",

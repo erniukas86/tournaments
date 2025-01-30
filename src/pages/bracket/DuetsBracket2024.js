@@ -72,18 +72,18 @@ function DuetsBracket2024() {
                 numberOfGame={5}
                 currentResult={{
                   homeName: "Tomas P & Raimonda P (B4)",
-                  homeScore: undefined,
+                  homeScore: 3,
                   awayName: "Nedas S & Edvinas V (A3)",
-                  awayScore: undefined,
+                  awayScore: 2,
                 }}
               ></VersusCard>
               <VersusCard
                 numberOfGame={6}
                 currentResult={{
                   homeName: "Mantas R & Klaidas P (B3)",
-                  homeScore: undefined,
+                  homeScore: 1,
                   awayName: "Tomas R & Rokas S (B1)",
-                  awayScore: undefined,
+                  awayScore: 3,
                 }}
               ></VersusCard>
             </div>
@@ -91,10 +91,10 @@ function DuetsBracket2024() {
               <VersusCard
                 numberOfGame={7}
                 currentResult={{
-                  homeName: "Winner of #5",
-                  homeScore: undefined,
-                  awayName: "Winner of #6",
-                  awayScore: undefined,
+                  homeName: "Tomas P & Raimonda P (B4)",
+                  homeScore: 2,
+                  awayName: "Tomas R & Rokas S (B1)",
+                  awayScore: 3,
                 }}
               ></VersusCard>
             </div>
@@ -113,10 +113,10 @@ function DuetsBracket2024() {
             <VersusCard
               numberOfGame={8}
               currentResult={{
-                homeName: "Loser of #5",
-                homeScore: undefined,
-                awayName: "Loser of #6",
-                awayScore: undefined,
+                homeName: "Nedas S & Edvinas V (A3)",
+                homeScore: 2,
+                awayName: "Mantas R & Klaidas P (B3)",
+                awayScore: 3,
               }}
             ></VersusCard>
           </div>
