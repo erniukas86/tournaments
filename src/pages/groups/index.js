@@ -29,7 +29,7 @@ function Groups () {
 
   const getData = (group) => {
     return group.participants.map((participant, index) => ({
-      '#': <Place numberOfGroupQualifiers={group.tournament.numberOfGroupQualifiers} index={index}></Place>,
+      '#': <Place numberOfGroupQualifiers={group.nrOfQualifiers || group.tournament.numberOfGroupQualifiers} index={index}></Place>,
       Name: `${participant.firstName} ${participant.lastName}`,
       Won: participant.won,
       Lost: participant.lost,
