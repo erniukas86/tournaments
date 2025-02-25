@@ -78,7 +78,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           boxShadow: PRIMARY_SHADOW,
-          marginTop: '50px'
+          marginTop: '10px'
         }
       }
     },
