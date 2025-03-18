@@ -94,6 +94,17 @@ function Tournaments() {
       });
     }
 
+    if (tournament.name === 'PC Table Tennis 2025') {
+      actions.push({
+        title: '🏆 Cup',
+        onClick: () => navigate(ROUTES.BRACKET_2025)
+      });
+      actions.push({
+        title: '🤝 Cup',
+        onClick: () => navigate(ROUTES.CHALLENGER_BRACKET_2025)
+      });
+    }
+
     return actions;
   };
 
