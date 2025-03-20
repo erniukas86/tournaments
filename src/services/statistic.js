@@ -1,4 +1,4 @@
-function calculateForPlayer (results, participant) {
+function calculateForPlayer (results, participant, advantages) {
   const stats = {
     played: 0,
     won: 0,
@@ -53,6 +53,12 @@ function calculateForPlayer (results, participant) {
   stats.points = stats.won * pointForWin + stats.draws;
   stats.difference = stats.score - stats.against;
   stats.order = stats.points * winModifier + stats.difference;
+
+  const advantage = advantages?.find(a => a.id === participant.id);
+
+  if (advantage) {
+    stats.order += 100;
+  }
 
   return stats;
 }

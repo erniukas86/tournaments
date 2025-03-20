@@ -18,6 +18,11 @@ async function get (tournamentId) {
 
   for (let index = 0; index < result.length; index++) {
     result[index].participants = await participantService.getByIds(result[index].participants.map(p => p.id));
+
+    if (result[index].advantages) {
+      result[index].advantages = await participantService.getByIds(result[index].advantages?.map(p => p.id));
+    }
+
     result[index].tournament = tournament;
   }
 
@@ -31,7 +36,7 @@ export function formGroups (groups) {
     createMissingResults(group);
 
     for (let j = 0; j < group.participants.length; j++) {
-      group.participants[j] = { ...group.participants[j], ...statisticService.calculateForPlayer(group.results, group.participants[j]) };
+      group.participants[j] = { ...group.participants[j], ...statisticService.calculateForPlayer(group.results, group.participants[j], group.advantages) };
     }
 
     group.participants.sort((a, b) => b.order - a.order);
