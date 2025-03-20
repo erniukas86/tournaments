@@ -1,8 +1,9 @@
 import { Box, Tab, Tabs } from '@mui/material';
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import VersusCard from '../../components/dataDisplay/VersusCard';
 import styles from './index.module.css';
 import SteppedLineTo from './SteppedLineTo';
+import { TitleContext } from '../../context';
 
 function Bracket2025 () {
   const [tabIndex, setTabIndex] = useState(0);
@@ -10,6 +11,12 @@ function Bracket2025 () {
   const handleChange = (event, newValue) => {
     setTabIndex(newValue);
   };
+
+  const { setTitle } = useContext(TitleContext);
+
+  useEffect(() => {
+    setTitle('🏆 PC Table Tennis 2025 - Champions Cup 🏆');
+  }, []);
 
   return (
     // TODO: REMOVE THIS HARDCODED STUFF WITH PROPER LOGIC
