@@ -117,23 +117,23 @@ function Standings2025 () {
       },
       {
         Place: '23',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Deimante Simonaityte',
+        Result: '1W/6L'
       },
       {
         Place: '24',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Mantas Reika',
+        Result: '1W/5L'
       },
       {
         Place: '25',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Greta Krisciunaite',
+        Result: '1W/5L'
       },
       {
         Place: '26',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Domante Zukauskaite',
+        Result: '0W/6L'
       }
     ];
   };
