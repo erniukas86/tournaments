@@ -18,4 +18,5 @@ export const ROUTES = {
   DUETS_STANDINGS_2024: "/duetsstandings2024",
   BRACKET_2025: "/bracket2025",
   CHALLENGER_BRACKET_2025: "/challengerbracket2025",
+  STANDINGS_2025: "/standings2025",
 };

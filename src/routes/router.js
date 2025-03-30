@@ -20,6 +20,7 @@ import DuetsBracket2024 from "../pages/bracket/DuetsBracket2024";
 import DuetsStandings2024 from "../pages/standings/duets2024";
 import Bracket2025 from "../pages/bracket/Bracket2025";
 import ChallengerCup2025 from "../pages/bracket/ChallengerCup2025";
+import Standings2025 from "../pages/standings/2025";
 
 function Router() {
   return (
@@ -64,6 +65,7 @@ function Router() {
             path={ROUTES.DUETS_STANDINGS_2024}
             element={<DuetsStandings2024 />}
           />
+          <Route path={ROUTES.STANDINGS_2025} element={<Standings2025 />} />
         </Routes>
       </Layout>
     </BrowserRouter>

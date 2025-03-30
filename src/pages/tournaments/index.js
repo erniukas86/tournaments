@@ -103,6 +103,10 @@ function Tournaments() {
         title: '🤝 Cup',
         onClick: () => navigate(ROUTES.CHALLENGER_BRACKET_2025)
       });
+      actions.push({
+        title: 'Standings',
+        onClick: () => navigate(ROUTES.STANDINGS_2025)
+      });
     }
 
     return actions;
