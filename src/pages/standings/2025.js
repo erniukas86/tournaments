@@ -97,23 +97,23 @@ function Standings2025 () {
       },
       {
         Place: '19',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Robertas Kalninis',
+        Result: '2W/5L'
       },
       {
         Place: '20',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Justinas Bliuvas',
+        Result: '2W/5L'
       },
       {
         Place: '21',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Justas Pranauskis',
+        Result: '1W/7L'
       },
       {
         Place: '22',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Aurimas Dabrisius',
+        Result: '1W/7L'
       },
       {
         Place: '23',
