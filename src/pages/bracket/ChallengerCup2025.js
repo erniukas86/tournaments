@@ -37,17 +37,17 @@ function ChallengerCup2025 () {
             <VersusCard numberOfGame={4} currentResult={{ homeName: 'Deimante Simonaityte (A6)', homeScore: 1, awayName: 'Rokas Lavron Mazur (D6)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Robertas Kalninis (A5)', homeScore: undefined, awayName: 'Lukas Keturakis (B6)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={5} currentResult={{ homeName: 'Robertas Kalninis (A5)', homeScore: 2, awayName: 'Lukas Keturakis (B6)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={6} currentResult={{ homeName: 'Justas Pranauskis (B7)', homeScore: 0, awayName: 'Vaiga Cecyte (D4)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={7} currentResult={{ homeName: 'Aurimas Stanaitis (C4)', homeScore: 3, awayName: 'Aurimas Dabrisius (A7)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={8} currentResult={{ homeName: 'Rokas Lavron Mazur (D6)', homeScore: 3, awayName: 'Justinas Bliuvas (B5)', awayScore: 0 }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Winner of game #5', homeScore: undefined, awayName: 'Vaiga Cecyte (D4)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={9} currentResult={{ homeName: 'Lukas Keturakis (B6)', homeScore: 1, awayName: 'Vaiga Cecyte (D4)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={10} currentResult={{ homeName: 'Aurimas Stanaitis (C4)', homeScore: undefined, awayName: 'Rokas Lavron Mazur (D6)', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Winner of game #9', homeScore: undefined, awayName: 'Winner of game #10', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Vaiga Cecyte (D4)', homeScore: undefined, awayName: 'Winner of game #10', awayScore: undefined }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game5" />
