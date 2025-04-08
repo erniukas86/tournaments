@@ -45,11 +45,11 @@ function Bracket2025 () {
             <VersusCard numberOfGame={7} currentResult={{ homeName: 'Dmytro Ivanchenko (A1)', homeScore: 3, awayName: 'Edvinas Velicka (C3)', awayScore: 0 }}></VersusCard>
             <VersusCard numberOfGame={8} currentResult={{ homeName: 'Tomas Plavskis (B3)', homeScore: 0, awayName: 'Klaidas Pilkis (D1)', awayScore: 3 }}></VersusCard>
             <VersusCard numberOfGame={9} currentResult={{ homeName: 'Ernestas Burokas (C1)', homeScore: 3, awayName: 'Karolis Vaitele (A3)', awayScore: 2 }}></VersusCard>
-            <VersusCard numberOfGame={10} currentResult={{ homeName: 'Raimonda Preimonaite (D3)', homeScore: undefined, awayName: 'Martynas Juzaitis (B1)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={10} currentResult={{ homeName: 'Raimonda Preimonaite (D3)', homeScore: 0, awayName: 'Martynas Juzaitis (B1)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={11} currentResult={{ homeName: 'Dmytro Ivanchenko (A1)', homeScore: undefined, awayName: 'Klaidas Pilkis (D1)', awayScore: undefined }}></VersusCard>
-            <VersusCard numberOfGame={12} currentResult={{ homeName: 'Ernestas Burokas (C1)', homeScore: undefined, awayName: 'Winner of game #10', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={12} currentResult={{ homeName: 'Ernestas Burokas (C1)', homeScore: undefined, awayName: 'Martynas Juzaitis (B1)', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column}>
             <VersusCard numberOfGame={13} currentResult={{ homeName: 'Winner of game #11', homeScore: undefined, awayName: 'Winner of game #12', awayScore: undefined }}></VersusCard>
@@ -77,7 +77,7 @@ function Bracket2025 () {
         <div className={styles.row}>
           <div className={styles.column} style={{ gap: '200px' }}>
             <VersusCard numberOfGame={15} currentResult={{ homeName: 'Edvinas Velicka (C3)', homeScore: undefined, awayName: 'Tomas Plavskis (B3)', awayScore: undefined }}></VersusCard>
-            <VersusCard numberOfGame={16} currentResult={{ homeName: 'Karolis Vaitele (A3)', homeScore: undefined, awayName: 'Loser of game #10', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={16} currentResult={{ homeName: 'Karolis Vaitele (A3)', homeScore: undefined, awayName: 'Raimonda Preimonaite (D3)', awayScore: undefined }}></VersusCard>
           </div>
           <div className={styles.column}>
             <VersusCard numberOfGame={17} currentResult={{ homeName: 'Winner of game #15', homeScore: undefined, awayName: 'Winner of game #16', awayScore: undefined }}></VersusCard>
