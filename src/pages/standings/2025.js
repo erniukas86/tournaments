@@ -87,13 +87,13 @@ function Standings2025 () {
       },
       {
         Place: '17',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Aurimas Stanaitis',
+        Result: '3W/4L'
       },
       {
         Place: '18',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Lukas Keturakis',
+        Result: '3W/6L'
       },
       {
         Place: '19',
