@@ -27,23 +27,23 @@ function Standings2025 () {
       },
       {
         Place: '5',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Edvinas Velicka',
+        Result: '6W/3L'
       },
       {
         Place: '6',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Raimonda Preimonaite',
+        Result: '5W/4L'
       },
       {
         Place: '7',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Tomas Plavskis',
+        Result: '6W/4L'
       },
       {
         Place: '8',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Karolis Vaitele',
+        Result: '5W/5L'
       },
       {
         Place: '9',
