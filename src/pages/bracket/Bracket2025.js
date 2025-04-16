@@ -76,11 +76,11 @@ function Bracket2025 () {
       {tabIndex === 2 && <>
         <div className={styles.row}>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={15} currentResult={{ homeName: 'Edvinas Velicka (C3)', homeScore: undefined, awayName: 'Tomas Plavskis (B3)', awayScore: undefined }}></VersusCard>
-            <VersusCard numberOfGame={16} currentResult={{ homeName: 'Karolis Vaitele (A3)', homeScore: undefined, awayName: 'Raimonda Preimonaite (D3)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={15} currentResult={{ homeName: 'Edvinas Velicka (C3)', homeScore: 3, awayName: 'Tomas Plavskis (B3)', awayScore: 1 }}></VersusCard>
+            <VersusCard numberOfGame={16} currentResult={{ homeName: 'Karolis Vaitele (A3)', homeScore: 0, isHomeDQ: true, awayName: 'Raimonda Preimonaite (D3)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={17} currentResult={{ homeName: 'Winner of game #15', homeScore: undefined, awayName: 'Winner of game #16', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={17} currentResult={{ homeName: 'Edvinas Velicka (C3)', homeScore: 3, awayName: 'Raimonda Preimonaite (D3)', awayScore: 2 }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game15" to="game17" />
@@ -88,7 +88,7 @@ function Bracket2025 () {
       </>}
       {tabIndex === 3 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={18} currentResult={{ homeName: 'Loser of game #15', homeScore: undefined, awayName: 'Loser of game #16', awayScore: undefined }}></VersusCard>
+          <VersusCard numberOfGame={18} currentResult={{ homeName: 'Tomas Plavskis (B3)', homeScore: 3, awayName: 'Karolis Vaitele (A3)', awayScore: 0, isAwayDQ: true }}></VersusCard>
         </div>
       </div>}
     </>
