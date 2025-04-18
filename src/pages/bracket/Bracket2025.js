@@ -48,11 +48,11 @@ function Bracket2025 () {
             <VersusCard numberOfGame={10} currentResult={{ homeName: 'Raimonda Preimonaite (D3)', homeScore: 0, awayName: 'Martynas Juzaitis (B1)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column} style={{ gap: '200px' }}>
-            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Dmytro Ivanchenko (A1)', homeScore: undefined, awayName: 'Klaidas Pilkis (D1)', awayScore: undefined }}></VersusCard>
-            <VersusCard numberOfGame={12} currentResult={{ homeName: 'Ernestas Burokas (C1)', homeScore: undefined, awayName: 'Martynas Juzaitis (B1)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Dmytro Ivanchenko (A1)', homeScore: 3, awayName: 'Klaidas Pilkis (D1)', awayScore: 0 }}></VersusCard>
+            <VersusCard numberOfGame={12} currentResult={{ homeName: 'Ernestas Burokas (C1)', homeScore: 3, awayName: 'Martynas Juzaitis (B1)', awayScore: 0 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Winner of game #11', homeScore: undefined, awayName: 'Winner of game #12', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={13} currentResult={{ homeName: 'Dmytro Ivanchenko (A1)', homeScore: 2, awayName: 'Ernestas Burokas (C1)', awayScore: 3 }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game2" to="game8" />
@@ -70,7 +70,7 @@ function Bracket2025 () {
       </>}
       {tabIndex === 1 && <div className={styles.row}>
         <div className={styles.column}>
-          <VersusCard numberOfGame={14} currentResult={{ homeName: 'Loser of game #11', homeScore: undefined, awayName: 'Loser of game #12', awayScore: undefined }}></VersusCard>
+          <VersusCard numberOfGame={14} currentResult={{ homeName: 'Klaidas Pilkis (D1)', homeScore: 3, awayName: 'Martynas Juzaitis (B1)', awayScore: 1 }}></VersusCard>
         </div>
       </div>}
       {tabIndex === 2 && <>
