@@ -77,13 +77,13 @@ function Standings2025 () {
       },
       {
         Place: '15',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Rokas Lavron Mazur',
+        Result: '4W/5L'
       },
       {
         Place: '16',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Vaiga Cecyte',
+        Result: '4W/4L'
       },
       {
         Place: '17',

@@ -47,7 +47,7 @@ function ChallengerCup2025 () {
             <VersusCard numberOfGame={10} currentResult={{ homeName: 'Aurimas Stanaitis (C4)', homeScore: 2, awayName: 'Rokas Lavron Mazur (D6)', awayScore: 3 }}></VersusCard>
           </div>
           <div className={styles.column}>
-            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Vaiga Cecyte (D4)', homeScore: undefined, awayName: 'Rokas Lavron Mazur (D6)', awayScore: undefined }}></VersusCard>
+            <VersusCard numberOfGame={11} currentResult={{ homeName: 'Vaiga Cecyte (D4)', homeScore: 2, awayName: 'Rokas Lavron Mazur (D6)', awayScore: 3 }}></VersusCard>
           </div>
         </div>
         <SteppedLineTo from="game1" to="game5" />
