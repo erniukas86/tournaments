@@ -7,23 +7,23 @@ function Standings2025 () {
     return [
       {
         Place: '🥇',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Ernestas Burokas',
+        Result: '8W/0L'
       },
       {
         Place: '🥈',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Dmytro Ivanchenko',
+        Result: '8W/1L'
       },
       {
         Place: '🥉',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Klaidas Pilkis',
+        Result: '7W/1L'
       },
       {
         Place: '4',
-        'Full Name': 'N/A',
-        Result: 'N/A'
+        'Full Name': 'Martynas Juzaitis',
+        Result: '6W/3L'
       },
       {
         Place: '5',
